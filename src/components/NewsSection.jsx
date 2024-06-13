@@ -6,7 +6,7 @@ import News2 from '../assets/images/news-2.jpg'
 import News3 from '../assets/images/news-3.jpg'
 const NewsSection = () => {
 const items =[
-    <div key={'news1'} className="news-block" style={{marginRight:'30px'}}>
+    <div key={'news1'} className="news-block" style={{marginInline:'15px'}}>
     <div className="inner-box">
       <div className="image-box">
         <figure className="image">
@@ -44,7 +44,7 @@ const items =[
       </div>
     </div>
   </div>,
-  <div key={'news2'} className="news-block" style={{marginRight:'30px'}}>
+  <div key={'news2'} className="news-block" style={{marginInline:'15px'}}>
     <div className="inner-box">
       <div className="image-box">
         <figure className="image">
@@ -82,7 +82,7 @@ const items =[
       </div>
     </div>
   </div>,
-  <div key={'news3'} className="news-block" style={{marginRight:'30px'}}>
+  <div key={'news3'} className="news-block" style={{marginInline:'15px'}}>
     <div className="inner-box">
       <div className="image-box">
         <figure className="image">

@@ -10,7 +10,7 @@ const TeamSection = () => {
 
 
     const item =[
-        <div key={'team1'} className="team-block" style={{marginRight:'30px'}}>
+        <div key={'team1'} className="team-block" style={{marginInline:'15px'}}>
         <div className="inner-box">
           <div className="image-box">
             <figure className="image">
@@ -45,7 +45,7 @@ const TeamSection = () => {
           </div>
         </div>
       </div>,
-      <div key={'team2'} className="team-block" style={{marginRight:'30px'}}>
+      <div key={'team2'} className="team-block" style={{marginInline:'15px'}}>
         <div className="inner-box">
           <div className="image-box">
             <figure className="image">
@@ -80,7 +80,7 @@ const TeamSection = () => {
           </div>
         </div>
       </div>,
-      <div key={'team3'} className="team-block" style={{marginRight:'30px'}}>
+      <div key={'team3'} className="team-block" style={{marginInline:'15px'}}>
         <div className="inner-box">
           <div className="image-box">
             <figure className="image">

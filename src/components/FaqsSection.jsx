@@ -19,7 +19,7 @@ const FaqsSection = () => {
               </h2>
             </div>
             <div className="inner-column">
-              <ul className="accordion-box">
+              <ul className="accordion-box" style={{padding:0, margin:0}}>
                 {[
                   { id: 'first', question: 'How to get free immigration?' },
                   { id: 'second', question: 'Which country is good for residents?' },

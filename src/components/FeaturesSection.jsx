@@ -7,7 +7,7 @@ import Feature3 from '../assets/images/feature3-3.jpg'
 const FeaturesSection = () => {
 
     const items =[
-        <div key="feature1" className="feature-block-four" style={{marginRight:'30px'}}>
+        <div key="feature1" className="feature-block-four" style={{marginInline:'15px'}}>
         <div className="inner-box">
           <div className="image-box">
             <figure className="image">
@@ -31,7 +31,7 @@ const FeaturesSection = () => {
       </div>,
   
       // Second item
-      <div key="feature2" className="feature-block-four" style={{marginRight:'30px'}}>
+      <div key="feature2" className="feature-block-four" style={{marginInline:'15px'}}>
         <div className="inner-box">
           <div className="image-box">
             <figure className="image">
@@ -55,7 +55,7 @@ const FeaturesSection = () => {
       </div>,
   
       // Third item
-      <div key="feature3" className="feature-block-four" style={{marginRight:'30px'}}>
+      <div key="feature3" className="feature-block-four" style={{marginInline:'15px'}}>
         <div className="inner-box">
           <div className="image-box">
             <figure className="image">
