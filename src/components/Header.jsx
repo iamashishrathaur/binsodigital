@@ -18,8 +18,11 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []); 
+  useEffect(()=>{
+    isMobileMenu ? document.body.classList.toggle("mobile-menu-visible"): document.body.classList.remove("mobile-menu-visible")
+  },[isMobileMenu])
   return (
-    <header className={`main-header header-style-two ${isMobileMenu ? 'mobile-menu-visible':''}`}>
+    <header className={`main-header header-style-two`}>
       <div className="header-top">
         <div className="inner-container">
           <div className="top-left">
