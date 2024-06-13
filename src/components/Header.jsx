@@ -3,6 +3,7 @@ import Logo from '../assets/images/logo-2.webp'
 import Logo2 from '../assets/images/logo.png'
 const Header = () => {
   const [isHeaderActive, setIsHeaderActive] = useState(false);
+  const [isMobileMenu, setIsMobileMenu] = useState(false)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -18,7 +19,7 @@ const Header = () => {
     };
   }, []); 
   return (
-    <header className="main-header header-style-two">
+    <header className={`main-header header-style-two ${isMobileMenu ? 'mobile-menu-visible':''}`}>
       <div className="header-top">
         <div className="inner-container">
           <div className="top-left">
@@ -106,7 +107,7 @@ const Header = () => {
           </div>
           <div className="outer-box">
             <div className="mobile-nav-toggler">
-            <i className='fa fa-bars'></i>
+            <i className='fa fa-bars' onClick={()=>setIsMobileMenu(true)}></i>
             </div>
           </div>
           <div className="btn-box">
@@ -120,7 +121,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="mobile-menu">
+      {/* <div className="mobile-menu">
         <div className="menu-backdrop" />
         <nav className="menu-box">
           <div className="upper-box">
@@ -190,7 +191,45 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-      </div>
+      </div> */}
+      <div className="mobile-menu">
+       <div className="menu-backdrop" onClick={()=>setIsMobileMenu(false)}></div>
+
+          <nav className="menu-box">
+          <div className="upper-box">
+          <div className="nav-logo"><a href="index.html"><img alt="" title="" data-cfsrc="images/logo-2.png" src="https://html.kodesolution.com/2024/binso-html/images/logo-2.png"/></a></div>
+          <div className="close-btn"><i className="icon fa fa-times" onClick={()=>setIsMobileMenu(false)}></i></div>
+          </div>
+          <ul className="navigation clearfix">
+          <li className="current"><a href="index.html">Home</a></li>
+                <li className=""><a href="index.html">Services</a></li>
+                <li className=""><a href="index.html">Project</a></li>
+                <li className=""><a href="index.html">About</a></li>
+                <li className=""><a href="index.html">Team</a></li>
+                <li className=""><a href="index.html">Contact</a></li>
+            </ul>
+            <ul className="contact-list-one">
+            <li>
+
+        <div className="contact-info-box"> <i className="icon lnr-icon-phone-handset"></i> <span className="title">Call Now</span> <a href="tel:+92880098670">+92 (8800) - 98670</a> </div>
+        </li>
+        <li>
+
+        <div className="contact-info-box"> <span className="icon lnr-icon-envelope1"></span> <span className="title">Send Email</span> <a href="mailto:help@company.com">help@company.com</a> </div>
+        </li>
+        <li>
+
+        <div className="contact-info-box"> <span className="icon lnr-icon-clock"></span> <span className="title">Send Email</span> Mon - Sat 8:00 - 6:30, Sunday - CLOSED </div>
+        </li>
+        </ul>
+        <ul className="social-links">
+        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i className="fab fa-pinterest"></i></a></li>
+        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+        </ul>
+       </nav>
+     </div>
       <div className={`sticky-header sticky-header-style-two ${isHeaderActive ? 'fixed-header animated slideInDown':''}`}>
         <div className="auto-container">
           <div className="inner-container">
@@ -214,7 +253,7 @@ const Header = () => {
                 </div>
               </nav>
               <div className="mobile-nav-toggler">
-                <i className='fa fa-bars'></i>
+                <i className='fa fa-bars' onClick={()=>setIsMobileMenu(true)}></i>
               </div>
             </div>
           </div>
