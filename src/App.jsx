@@ -1,4 +1,5 @@
 import './App.css'
+import './custom.css'
 import Footer from './components/Footer'
 import Home1 from './components/Home1'
 
