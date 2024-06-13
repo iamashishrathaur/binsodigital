@@ -21,26 +21,23 @@ const Home1 = () => {
     <>
   <div className="page-wrapper">
     <Preloader/>
-    {/* <Header/> */}
-    <header className="main-header header-style-two">
+    <Header/>
+    {/* <header className="main-header header-style-two">
       <div className="header-top">
         <div className="inner-container">
           <div className="top-left">
             <ul className="list-style-one">
               <li>
               <i className="fa fa-clock"></i>
-                {/* <FaClock color='#ff6809'/> */}
                 Mon - Fri: 09.00am - 10.00 pm
               </li>
               <li>
               <i className="fa fa-map-marker-alt"></i>
-                {/* <FaMapMarkerAlt color='#ff6809'/> */}
                 Richardson, California
                 62639{" "}
               </li>
               <li>
               <i className="fa fa-envelope"></i>
-                {/* <FaEnvelope color='#ff6809'/> */}
                 {" "}
                 <a href="#" className="mailto:soliur@mail.com">
                   <span
@@ -56,9 +53,8 @@ const Home1 = () => {
           <div className="top-right">
             <a href="tel:+92(8800)9806" className="info-btn">
               {" "}
-              {/* <FaPhone className='icon' size={'10px'}/> */}
+
               <i className="icon fa fa-phone"></i>
-              {/* <i className="icon fa fa-phone" /> <small>Make a Call</small>{" "} */}
               <strong>+36 55 540 069</strong>{" "}
             </a>
             <ul className="social-icon-one">
@@ -391,7 +387,7 @@ const Home1 = () => {
           </form>
         </div>
       </div>
-      <div className="sticky-header sticky-header-style-two">
+      <div className="sticky-header sticky-header-style-two fixed-header animated slideInDown">
         <div className="auto-container">
           <div className="inner-container">
             <div className="logo">
@@ -413,7 +409,8 @@ const Home1 = () => {
           </div>
         </div>
       </div>
-    </header>
+    </header> */}
+    
     <section className="main-slider slider-style-one">
       <div
         className="rev_slider_wrapper fullwidthbanner-container"

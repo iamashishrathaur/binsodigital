@@ -3647,7 +3647,7 @@ ul,li {
   width: 100%;
   background-color: #f7f7f7;
   content: "";
-  border-right: 0px solid var(--theme-color1);
+  border-right: 4px solid var(--theme-color1);
   border-top-right-radius: 100px
 }
 
@@ -3804,6 +3804,20 @@ ul,li {
   opacity: 1;
   z-index: 9999;
   visibility: visible
+}
+
+.slideInDown{
+  animation: slideInDown 0.9s ease forwards;
+}
+
+@keyframes slideInDown {
+  0%{
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  100%{
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .sticky-header .logo {
