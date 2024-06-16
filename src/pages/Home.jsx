@@ -16,12 +16,13 @@ import Preloader from '../components/Preloader'
 import AboutSection from '../components/AboutSection'
 import ServicesSection4 from '../components/ServicesSection4'
 import ScrollToTop from '../components/ScrollToTop'
+import Footer from '../components/Footer'
 const Home1 = () => {
   return (
     <>
   <div className="page-wrapper">
     <Preloader/>
-    <Header/> 
+    <Header/>
     <section className="main-slider slider-style-one">
       <div
         className="rev_slider_wrapper fullwidthbanner-container"
@@ -208,6 +209,7 @@ const Home1 = () => {
    
    <ContractSection/>
     <MapSection/>
+    <Footer/>
   </div>
   <ScrollToTop/>
 </>

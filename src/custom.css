@@ -1,3 +1,12 @@
+/* Top Header */
+.list-style-one {
+    margin-bottom: 0;
+}
+.social-icon-one {
+    margin-bottom: 0;
+}
+
+/* Pricing */
 .pricing-block .inner-box .plan-list .user-links li a svg {
     position: absolute;
     left: 0;
@@ -15,12 +24,7 @@
     font-family: "font awesome 5 free";
     color: #fff;
 }
-.list-style-one {
-    margin-bottom: 0;
-}
-.social-icon-one {
-    margin-bottom: 0;
-}
+
 
 .page-title .title{
     font-weight: var(--h1-font-weight);
@@ -31,6 +35,8 @@
     font-weight: var(--h2-font-weight);
     line-height: var(--line-height-heading);
 }
+
+/* all style */
 ul{
     padding-left: 0 !important;
 }
