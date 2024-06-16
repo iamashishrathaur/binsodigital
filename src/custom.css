@@ -15,3 +15,22 @@
     font-family: "font awesome 5 free";
     color: #fff;
 }
+.list-style-one {
+    margin-bottom: 0;
+}
+.social-icon-one {
+    margin-bottom: 0;
+}
+
+.page-title .title{
+    font-weight: var(--h1-font-weight);
+    line-height: var(--line-height-heading-h1);
+}
+.pricing-block .inner-box .plan-price .title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--line-height-heading);
+}
+ul{
+    padding-left: 0 !important;
+}

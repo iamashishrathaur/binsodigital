@@ -141,38 +141,38 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   font-size: var(--h1-font-size);
-  font-weight: var(--h1-font-weight) !important;
-  line-height: var(--line-height-heading-h1) !important;
+  font-weight: var(--h1-font-weight);
+  line-height: var(--line-height-heading-h1);
 }
 
 h2 {
-  font-size: var(--h2-font-size) !important;
-  font-weight: var(--h2-font-weight) !important;
-  line-height: var(--line-height-heading) !important;
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  line-height: var(--line-height-heading);
 }
 
 h3 {
-  font-size: var(--h3-font-size) !important;
-  font-weight: var(--h3-font-weight) !important;
-  line-height: var(--line-height-heading) !important;
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  line-height: var(--line-height-heading);
 }
 
 h4 {
-  font-size: var(--h4-font-size) !important;
-  font-weight: var(--h4-font-weight) !important;
-  line-height: var(--line-height-heading) !important;
+  font-size: var(--h4-font-size);
+  font-weight: var(--h4-font-weight);
+  line-height: var(--line-height-heading);
 }
 
 h5 {
-  font-size: var(--h5-font-size) !important;
-  font-weight: var(--h5-font-weight) !important;
-  line-height: var(--line-height-heading) !important;
+  font-size: var(--h5-font-size);
+  font-weight: var(--h5-font-weight);
+  line-height: var(--line-height-heading);
 }
 
 h6 {
-  font-size: var(--h6-font-size) !important;
-  font-weight: var(--h6-font-weight) !important;
-  line-height: var(--line-height-heading-small) !important;
+  font-size: var(--h6-font-size);
+  font-weight: var(--h6-font-weight);
+  line-height: var(--line-height-heading-small);
 }
 
 table p {
@@ -217,8 +217,8 @@ pre,ul,ol,dl,dd,blockquote,address,table,fieldset {
 
 ol,ul {
   list-style-position: inside;
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 b,strong {
@@ -447,7 +447,7 @@ ul,li {
   background-repeat: no-repeat;
   -webkit-animation: pulse 1s infinite linear;
   animation: pulse 1s infinite linear;
-  background-image: url(../images/icons/preloader.png);
+  background-image: url(../public/images/icons/preloader.png);
   content: ""
 }
 
@@ -3730,11 +3730,11 @@ ul,li {
 .header-style-two .header-top .inner-container {
   border-bottom: 1px solid rgba(255,255,255,.1);
   margin-left: 354px;
-  padding-left: 112px
+  padding-left: 112px;
 }
 
 .header-style-two .header-top .inner-container .list-style-one li {
-  color: #8f8f8f
+  color: #8f8f8f;
 }
 
 .header-style-two .header-top .inner-container .list-style-one li a {

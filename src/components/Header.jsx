@@ -44,7 +44,7 @@ const Header = () => {
                     className="__cf_email__"
                     data-cfemail="bdeed2d1d4c8cffdd0dcd4d193ded2d0"
                   >
-                    [email&nbsp;protected]
+                    gmail@gamil.com
                   </span>
                 </a>
               </li>
@@ -55,6 +55,7 @@ const Header = () => {
               {" "}
 
               <i className="icon fa fa-phone"></i>
+              <small>Make a Call</small>
               <strong>+36 55 540 069</strong>{" "}
             </a>
             <ul className="social-icon-one">
