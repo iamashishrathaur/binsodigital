@@ -1,13 +1,26 @@
 import './App.css'
 import './custom.css'
 import Footer from './components/Footer'
-import Home1 from './components/Home1'
+import Home from './pages/Home'
+import Pricing from './pages/Pricing'
+import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 
 function App() {
 
+  const routes = createBrowserRouter([
+    {
+      path:'/',
+      element:<Home/>
+    },
+    {
+      path:'/pricing',
+      element:<Pricing/>
+    }
+  ])
+
   return (
     <>
-    <Home1/>
+    <RouterProvider router={routes}/>
      <Footer/>
     </>
   )

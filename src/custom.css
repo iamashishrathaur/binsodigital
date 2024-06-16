@@ -1,0 +1,17 @@
+.pricing-block .inner-box .plan-list .user-links li a svg {
+    position: absolute;
+    left: 0;
+    top: 25%;
+}
+
+.page-breadcrumb li::after {
+    position: absolute;
+    content: "\f105";
+    right: -6px;
+    top: 1px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: "font awesome 5 free";
+    color: #fff;
+}

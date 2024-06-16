@@ -214,15 +214,15 @@ const Header = () => {
             <ul className="contact-list-one">
             <li>
 
-        <div className="contact-info-box"> <i className="icon lnr-icon-phone-handset"></i> <span className="title">Call Now</span> <a href="tel:+92880098670">+92 (8800) - 98670</a> </div>
+        <div className="contact-info-box"> <i className="icon fa fa-phone"></i> <span className="title">Call Now</span> <a href="tel:+92880098670">+92 (8800) - 98670</a> </div>
         </li>
         <li>
 
-        <div className="contact-info-box"> <span className="icon lnr-icon-envelope1"></span> <span className="title">Send Email</span> <a href="mailto:help@company.com">help@company.com</a> </div>
+        <div className="contact-info-box"> <i className='icon fa fa-envelope'></i> <span className="title">Send Email</span> <a href="mailto:help@company.com">help@company.com</a> </div>
         </li>
         <li>
 
-        <div className="contact-info-box"> <span className="icon lnr-icon-clock"></span> <span className="title">Send Email</span> Mon - Sat 8:00 - 6:30, Sunday - CLOSED </div>
+        <div className="contact-info-box"> <span className="icon fa fa-clock"></span> <span className="title">Send Email</span> Mon - Sat 8:00 - 6:30, Sunday - CLOSED </div>
         </li>
         </ul>
         <ul className="social-links">
