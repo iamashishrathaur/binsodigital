@@ -85,3 +85,11 @@ ul{
 .about-section-six .image-column .inner-column .image-box .exp-box .inner .icon-box .icon{
     font-weight: 600;
 }
+.about-section-six .content-column .inner-box .btn-box .auther-info .content-box .title{
+    margin-top: 0;
+    color: black;
+}
+/* Service */
+.services-section-four .bottom-box a{
+  color: var(--link-color);
+}

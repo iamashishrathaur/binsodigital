@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Logo from '../assets/images/logo-2.webp'
 import Logo2 from '../assets/images/logo.png'
+import { Link } from 'react-router-dom';
 const Header = () => {
   const [isHeaderActive, setIsHeaderActive] = useState(false);
   const [isMobileMenu, setIsMobileMenu] = useState(false)
@@ -100,12 +101,11 @@ const Header = () => {
           <div className="nav-outer">
             <nav className="main-menu">
               <ul className="navigation">
-                <li className="current"><a href="index.html">Home</a></li>
-                <li className=""><a href="index.html">Services</a></li>
-                <li className=""><a href="index.html">Project</a></li>
-                <li className=""><a href="index.html">About</a></li>
-                <li className=""><a href="index.html">Team</a></li>
-                <li className=""><a href="index.html">Contact</a></li>
+              <li className="current"><Link to={'/'}>Home</Link></li>
+                <li className=""><Link to={'/services'}>Services</Link></li>
+                <li className=""><Link to={'/about'}>About</Link></li>
+                <li className=""><Link to={'/team'}>Team</Link></li>
+                <li className=""><Link to={'/contract'}>Contact</Link></li>
               </ul>
             </nav>
           </div>
@@ -205,12 +205,11 @@ const Header = () => {
           <div className="close-btn"><i className="icon fa fa-times" onClick={()=>setIsMobileMenu(false)}></i></div>
           </div>
           <ul className="navigation clearfix">
-          <li className="current"><a href="index.html">Home</a></li>
-                <li className=""><a href="index.html">Services</a></li>
-                <li className=""><a href="index.html">Project</a></li>
-                <li className=""><a href="index.html">About</a></li>
-                <li className=""><a href="index.html">Team</a></li>
-                <li className=""><a href="index.html">Contact</a></li>
+                <li className="current"><Link to={'/'}>Home</Link></li>
+                <li className=""><Link to={'/services'}>Services</Link></li>
+                <li className=""><Link to={'/about'}>About</Link></li>
+                <li className=""><Link to={'/team'}>Team</Link></li>
+                <li className=""><Link to={'/contract'}>Contact</Link></li>
             </ul>
             <ul className="contact-list-one">
             <li>
@@ -247,12 +246,11 @@ const Header = () => {
               <nav className="main-menu">
                 <div className="navbar-collapse show collapse clearfix">
                 <ul className="navigation clearfix">
-                <li className="current"><a href="index.html">Home</a></li>
-                <li className=""><a href="index.html">Services</a></li>
-                <li className=""><a href="index.html">Project</a></li>
-                <li className=""><a href="index.html">About</a></li>
-                <li className=""><a href="index.html">Team</a></li>
-                <li className=""><a href="index.html">Contact</a></li>
+                <li className="current"><Link to={'/'}>Home</Link></li>
+                <li className=""><Link to={'/services'}>Services</Link></li>
+                <li className=""><Link to={'/about'}>About</Link></li>
+                <li className=""><Link to={'/team'}>Team</Link></li>
+                <li className=""><Link to={'/contract'}>Contact</Link></li>
                 </ul>
                 </div>
               </nav>
