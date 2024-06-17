@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Pricing from './pages/Pricing'
 import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import NotFound from './pages/NotFound'
+import Services from './pages/Services'
 
 function App() {
 
@@ -15,6 +16,10 @@ function App() {
     {
       path:'/pricing',
       element:<Pricing/>
+    },
+    {
+      path:'/services',
+      element:<Services/>
     },
     {
       path:'*',

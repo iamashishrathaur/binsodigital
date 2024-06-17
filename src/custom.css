@@ -40,3 +40,36 @@
 ul{
     padding-left: 0 !important;
 }
+
+
+/* Slider */
+.inner-column .title{
+    font-size: var(--h1-font-size);
+}
+
+/* .tp-dottedoverlay.on:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 591px;
+    height: 645px;
+    background-image: url(../images/icons/patter-3.png);
+    opacity: .4;
+    z-index: 1;
+    -webkit-animation: bounce-x 10s infinite linear;
+    animation: bounce-x 10s infinite linear;
+}
+.tp-dottedoverlay.on::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(1, 20, 37, 0.9490196078)), to(rgba(1, 20, 37, 0.6117647059)));
+    background: linear-gradient(rgba(1, 20, 37, 0.9490196078) 60%, rgba(1, 20, 37, 0.6117647059) 100%);
+    opacity: .9;
+    z-index: 1;
+} */

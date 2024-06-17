@@ -1,571 +1,1021 @@
 import React from 'react'
-
+import bgSlider1 from '../assets/images/bg-slider1.jpg'
+import bgSlider2 from '../assets/images/bg-slider2.jpg'
 const MainSlider = () => {
   return (
-    <>
-     <header className="main-header header-style-two">
-      <div className="header-top">
-        <div className="inner-container">
-          <div className="top-left">
-            <ul className="list-style-one">
-              <li>
-              <i className="fa fa-clock"></i>
-                {/* <FaClock color='#ff6809'/> */}
-                Mon - Fri: 09.00am - 10.00 pm
-              </li>
-              <li>
-              <i className="fa fa-map-marker-alt"></i>
-                {/* <FaMapMarkerAlt color='#ff6809'/> */}
-                Richardson, California
-                62639{" "}
-              </li>
-              <li>
-              <i className="fa fa-envelope"></i>
-                {/* <FaEnvelope color='#ff6809'/> */}
-                {" "}
-                <a href="#" className="mailto:soliur@mail.com">
-                  <span
-                    className="__cf_email__"
-                    data-cfemail="bdeed2d1d4c8cffdd0dcd4d193ded2d0"
-                  >
-                    [email&nbsp;protected]
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="top-right">
-            <a href="tel:+92(8800)9806" className="info-btn">
-              {" "}
-              {/* <FaPhone className='icon' size={'10px'}/> */}
-              <i className="icon fa fa-phone"></i>
-              {/* <i className="icon fa fa-phone" /> <small>Make a Call</small>{" "} */}
-              <strong>+36 55 540 069</strong>{" "}
-            </a>
-            <ul className="social-icon-one">
-              <li>
-                <a href="#">
-                <i className="icon fab fa-google"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                <i className="icon fab fa-pinterest"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                <i className="icon fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                <i className="icon fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                <i className="icon fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="header-lower">
-        <div className="main-box">
-          <div className="logo-box">
-            <div className="logo">
-              <a href="index.html">
-                <img src={Logo} alt="Logo" title="Soliur" />
-              </a>
-            </div>
-          </div>
-          <div className="nav-outer">
-            <nav className="nav main-menu">
-              <ul className="navigation">
-                <li className="current dropdown">
-                  <a href="index.html">Home</a>
-                  <ul>
-                    <li>
-                      <a href="index.html">Home page 01</a>
-                    </li>
-                    <li>
-                      <a href="index-2.html">Home page 02</a>
-                    </li>
-                    <li className="dropdown">
-                      <a href="index.html">New Home</a>
-                      <ul>
-                        <li>
-                          <a href="index-3.html">Home Page 03</a>
-                        </li>
-                        <li>
-                          <a href="index-4.html">Home Page 04</a>
-                        </li>
-                        <li>
-                          <a href="index-5.html">Home Page 05</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="dropdown">
-                      <a href="index-1-single.html">Single Styles</a>
-                      <ul>
-                        <li>
-                          <a href="index-1-single.html">Single Page 01</a>
-                        </li>
-                        <li>
-                          <a href="index-2-single.html">Single Page 02</a>
-                        </li>
-                        <li>
-                          <a href="index-3-single.html">Single Page 03</a>
-                        </li>
-                        <li>
-                          <a href="index-4-single.html">Single Page 04</a>
-                        </li>
-                        <li>
-                          <a href="index-1-single.html">Single Page 05</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="dropdown">
-                      <a href="index-1-dark.html">Dark Styles</a>
-                      <ul>
-                        <li>
-                          <a href="index-1-dark.html">Dark Page 01</a>
-                        </li>
-                        <li>
-                          <a href="index-2-dark.html">Dark Page 02</a>
-                        </li>
-                        <li>
-                          <a href="index-3-dark.html">Dark Page 03</a>
-                        </li>
-                        <li>
-                          <a href="index-4-dark.html">Dark Page 04</a>
-                        </li>
-                        <li>
-                          <a href="index-1-dark.html">Dark Page 05</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="index-1-rtl.html">RTL Style One</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="dropdown">
-                  {" "}
-                  <a href="#">Pages</a>
-                  <ul>
-                    <li>
-                      <a href="page-about.html">About</a>
-                    </li>
-                    <li className="dropdown">
-                      {" "}
-                      <a href="#">Projects</a>
-                      <ul>
-                        <li>
-                          <a href="page-projects.html">Projects List</a>
-                        </li>
-                        <li>
-                          <a href="page-project-details.html">
-                            Project Details
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="dropdown">
-                      {" "}
-                      <a href="#">Team</a>
-                      <ul>
-                        <li>
-                          <a href="page-team.html">Team List</a>
-                        </li>
-                        <li>
-                          <a href="page-team-details.html">Team Details</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="page-testimonial.html">Testimonial</a>
-                    </li>
-                    <li>
-                      <a href="page-pricing.html">Pricing</a>
-                    </li>
-                    <li>
-                      <a href="page-faq.html">FAQ</a>
-                    </li>
-                    <li>
-                      <a href="page-404.html">Page 404</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="dropdown">
-                  {" "}
-                  <a href="#">Services</a>
-                  <ul>
-                    <li>
-                      <a href="page-services.html">Services List</a>
-                    </li>
-                    <li>
-                      <a href="page-service-details.html">Service Details</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="dropdown">
-                  {" "}
-                  <a href="#">Shop</a>
-                  <ul>
-                    <li>
-                      <a href="shop-products.html">Products</a>
-                    </li>
-                    <li>
-                      <a href="shop-products-sidebar.html">
-                        Products with Sidebar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="shop-product-details.html">Product Details</a>
-                    </li>
-                    <li>
-                      <a href="shop-cart.html">Cart</a>
-                    </li>
-                    <li>
-                      <a href="shop-checkout.html">Checkout</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="dropdown">
-                  {" "}
-                  <a href="#">News</a>
-                  <ul>
-                    <li>
-                      <a href="news-grid.html">News Grid</a>
-                    </li>
-                    <li>
-                      <a href="news-details.html">News Details</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="page-contact.html">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div className="outer-box">
-            <button className="ui-btn ui-btn search-btn">
-              {" "}
-              <span className="icon lnr lnr-icon-search" />{" "}
-            </button>
-            <span className="divider" />
-            <button className="ui-btn ui-btn cart-btn">
-              {" "}
-              <i className="icon lnr lnr-icon-cart" />{" "}
-              <span className="count">0</span>{" "}
-            </button>
-            <div className="mobile-nav-toggler">
-              <span className="icon lnr-icon-bars" />
-            </div>
-          </div>
-          <div className="btn-box">
-            {" "}
-            <a
-              href="page-contact.html"
-              className="theme-btn btn-style-one hover-light"
+
+    <section className="banner-section banner-style-one">
+      {/* <div className='tp-dottedoverlay on'></div> */}
+    <div
+      className="bg bg-image"
+      style={{ backgroundImage: `url(${bgSlider2})` }}
+    />
+    <ul className="slide-social">
+      <li>
+        <a href="#">FACEBOOK</a>
+      </li>
+      <li>
+        <a href="#">instagram</a>
+      </li>
+      <li>
+        <a href="#">twitter</a>
+      </li>
+    </ul>
+    <div className="auto-container">
+      <div className="row">
+        <div className="content-column col-xl-12">
+          <div className="inner-column">
+            <div
+              className="border-box wow zoomIn animated animated"
+              style={{ visibility: "visible", animationName: "zoomIn" }}
+            />
+            <span
+              className="sub-title wow fadeInUp animated"
+              data-wow-delay="300ms"
+              style={{
+                visibility: "visible",
+                animationDelay: "300ms",
+                animationName: "fadeInUp"
+              }}
             >
-              <span className="btn-title">Request a quote</span>
-            </a>{" "}
+              Best Digital Agency
+            </span>
+            <h1
+              className="title wow fadeInUp animated"
+              data-wow-delay="300ms"
+              style={{
+                visibility: "visible",
+                animationDelay: "300ms",
+                animationName: "fadeInUp"
+              }}
+            >
+              Grow your <br /> Digital <span>Agency</span>
+            </h1>
+            <div
+              className="text wow fadeInUp animated"
+              data-wow-delay="600ms"
+              style={{
+                visibility: "visible",
+                animationDelay: "600ms",
+                animationName: "fadeInUp"
+              }}
+            >
+              A leading voice in low-income binso policy and <br /> the nation’s
+              largest nonprofit business installer
+            </div>
+            <a
+              href="page-about.html"
+              className="theme-btn btn-style-one dark-bg wow fadeInUp animated"
+              data-wow-delay="900ms"
+              style={{
+                visibility: "visible",
+                animationDelay: "900ms",
+                animationName: "fadeInUp"
+              }}
+            >
+              <span className="btn-title">Explore More </span>
+            </a>
           </div>
         </div>
       </div>
-      <div className="mobile-menu">
-        <div className="menu-backdrop" />
-        <nav className="menu-box">
-          <div className="upper-box">
-            <div className="nav-logo">
-              <a href="index.html">
-                <img src="images/logo-2.png" alt="" title="" />
-              </a>
-            </div>
-            <div className="close-btn">
-              <i className="icon fa fa-times" />
-            </div>
-          </div>
-          <ul className="navigation clearfix"></ul>
-          <ul className="contact-list-one">
-            <li>
-              <div className="contact-info-box">
-                {" "}
-                <i className="icon lnr-icon-phone-handset" />{" "}
-                <span className="title">Call Now</span>{" "}
-                <a href="tel:+92880098670">+92 (8800) - 98670</a>{" "}
-              </div>
-            </li>
-            <li>
-              <div className="contact-info-box">
-                {" "}
-                <span className="icon lnr-icon-envelope1" />{" "}
-                <span className="title">Send Email</span>{" "}
-                <a href="/cdn-cgi/l/email-protection#97fff2fbe7d7f4f8fae7f6f9eeb9f4f8fa">
-                  <span
-                    className="__cf_email__"
-                    data-cfemail="95fdf0f9e5d5f6faf8e5f4fbecbbf6faf8"
-                  >
-                    [email&nbsp;protected]
-                  </span>
-                </a>{" "}
-              </div>
-            </li>
-            <li>
-              <div className="contact-info-box">
-                {" "}
-                <span className="icon lnr-icon-clock" />{" "}
-                <span className="title">Send Email</span> Mon - Sat 8:00 - 6:30,
-                Sunday - CLOSED{" "}
-              </div>
-            </li>
-          </ul>
-          <ul className="social-links">
-            <li>
-              <a href="#">
-                <i className="fab fa-twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-facebook-f" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-pinterest" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-instagram" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div className="search-popup">
-        {" "}
-        <span className="search-back-drop" />
-        <button className="close-search">
-          <span className="fa fa-times" />
-        </button>
-        <div className="search-inner">
-          <form method="post" action="index.html">
-            <div className="form-group">
-              <input
-                type="search"
-                name="search-field"
-                defaultValue=""
-                placeholder="Search..."
-                required=""
-              />
-              <button type="submit">
-                <i className="fa fa-search" />
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div className="sticky-header sticky-header-style-two">
-        <div className="auto-container">
-          <div className="inner-container">
-            <div className="logo">
-              {" "}
-              <a href="index.html" title="">
-                <img src="images/logo.png" alt="" title="" />
-              </a>{" "}
-            </div>
-            <div className="nav-outer">
-              <nav className="main-menu">
-                <div className="navbar-collapse show collapse clearfix">
-                  <ul className="navigation clearfix"></ul>
-                </div>
-              </nav>
-              <div className="mobile-nav-toggler">
-                <span className="icon lnr-icon-bars" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section className="main-slider slider-style-one">
-      <div
-        className="rev_slider_wrapper fullwidthbanner-container"
-        id="rev_slider_two_wrapper"
-        data-source="gallery"
-      >
-        <div
-          className="rev_slider fullwidthabanner"
-          id="rev_slider_two"
-          data-version="5.4.1"
-        >
-          <ul>
-            <li data-index="rs-1" data-transition="zoomout">
-              <img
-                src="images/main-slider/bg-slider1.jpg"
-                alt=""
-                className="rev-slidebg"
-              />
-              <div
-                className="tp-caption"
-                data-paddingbottom="[15,15,15,15]"
-                data-paddingleft="[15,15,15,15]"
-                data-paddingright="[0,0,0,0]"
-                data-paddingtop="[10,10,10,10]"
-                data-responsive_offset="on"
-                data-type="text"
-                data-height="none"
-                data-width="['750','750','750','750']"
-                data-whitespace="normal"
-                data-hoffset="['0','0','0','0']"
-                data-voffset="['-130','-100','-160','-110']"
-                data-x="['center','center','center','center']"
-                data-y="['middle','middle','middle','middle']"
-                data-textalign="['top','top','top','top']"
-                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-              >
-                <span className="sub-title">
-                  The best digital marketing agency
-                </span>
-              </div>
-              <div
-                className="tp-caption"
-                data-paddingbottom="[0,0,0,0]"
-                data-paddingleft="[15,15,15,15]"
-                data-paddingright="[15,15,15,15]"
-                data-paddingtop="[0,0,0,0]"
-                data-responsive_offset="on"
-                data-type="text"
-                data-height="none"
-                data-width="['1050','750','750','480']"
-                data-whitespace="normal"
-                data-hoffset="['0','0','0','0']"
-                data-voffset="['20','30','-20','0']"
-                data-x="['center','center','center','center']"
-                data-y="['middle','middle','middle','middle']"
-                data-textalign="['top','top','top','top']"
-                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-              >
-                <h1 className="title">
-                  Grow Your <br />
-                  <span>business</span>
-                </h1>
-              </div>
-              <div
-                className="tp-caption"
-                data-paddingbottom="[0,0,0,0]"
-                data-paddingleft="[15,15,0,5]"
-                data-paddingright="[15,15,15,15]"
-                data-paddingtop="[0,0,0,0]"
-                data-responsive_offset="on"
-                data-type="text"
-                data-height="none"
-                data-width="['700','750','700','450']"
-                data-whitespace="normal"
-                data-hoffset="['0','0','0','0']"
-                data-voffset="['185','180','170','150']"
-                data-x="['center','center','center','center']"
-                data-y="['middle','middle','middle','middle']"
-                data-textalign="['top','top','top','top']"
-                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-              >
-                <button
-                  type="submit"
-                  className="theme-btn btn-style-one hover-light"
-                >
-                  <span className="btn-title">Discover More</span>
-                </button>
-              </div>
-            </li>
-            <li data-index="rs-2" data-transition="zoomout">
-              <img
-                src={Slider2}
-                alt=""
-                className="rev-slidebg"
-              />
-              <div
-                className="tp-caption"
-                data-paddingbottom="[15,15,15,15]"
-                data-paddingleft="[15,15,15,15]"
-                data-paddingright="[0,0,0,0]"
-                data-paddingtop="[10,10,10,10]"
-                data-responsive_offset="on"
-                data-type="text"
-                data-height="none"
-                data-width="['750','750','750','750']"
-                data-whitespace="normal"
-                data-hoffset="['0','0','0','0']"
-                data-voffset="['-130','-100','-160','-110']"
-                data-x="['center','center','center','center']"
-                data-y="['middle','middle','middle','middle']"
-                data-textalign="['top','top','top','top']"
-                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-              >
-                <span className="sub-title">
-                  The best digital marketing agency
-                </span>
-              </div>
-              <div
-                className="tp-caption"
-                data-paddingbottom="[0,0,0,0]"
-                data-paddingleft="[15,15,15,15]"
-                data-paddingright="[15,15,15,15]"
-                data-paddingtop="[0,0,0,0]"
-                data-responsive_offset="on"
-                data-type="text"
-                data-height="none"
-                data-width="['1050','750','750','480']"
-                data-whitespace="normal"
-                data-hoffset="['0','0','0','0']"
-                data-voffset="['20','30','-20','0']"
-                data-x="['center','center','center','center']"
-                data-y="['middle','middle','middle','middle']"
-                data-textalign="['top','top','top','top']"
-                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-              >
-                <h1 className="title">
-                  Grow Your <br />
-                  <span>business</span>
-                </h1>
-              </div>
-              <div
-                className="tp-caption"
-                data-paddingbottom="[0,0,0,0]"
-                data-paddingleft="[15,15,0,5]"
-                data-paddingright="[15,15,15,15]"
-                data-paddingtop="[0,0,0,0]"
-                data-responsive_offset="on"
-                data-type="text"
-                data-height="none"
-                data-width="['700','750','700','450']"
-                data-whitespace="normal"
-                data-hoffset="['0','0','0','0']"
-                data-voffset="['185','180','170','150']"
-                data-x="['center','center','center','center']"
-                data-y="['middle','middle','middle','middle']"
-                data-textalign="['top','top','top','top']"
-                data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-              >
-                <button
-                  type="submit"
-                  className="theme-btn btn-style-one hover-light"
-                >
-                  <span className="btn-title">Discover More</span>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    </>
+    </div>
+  </section>
+  
+  //   <section className="main-slider slider-style-four">
+  // <div
+  //   className="rev_slider_wrapper fullwidthbanner-container"
+  //   id="rev_slider_one_wrapper"
+  //   data-source="gallery"
+  //   style={{ overflow: "visible", height: 750 }}
+  // >
+  //   <div
+  //     className="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus"
+  //     id="rev_slider_one"
+  //     data-version="5.4.1"
+  //     style={{ marginTop: 0, marginBottom: 0, height: 750 }}
+  //     data-slideactive="rs-1"
+  //   >
+  //     <ul
+  //       className="tp-revslider-mainul"
+  //       style={{
+  //         visibility: "visible",
+  //         display: "block",
+  //         overflow: "hidden",
+  //         width: 2090,
+  //         height: "100%",
+  //         maxHeight: "none",
+  //         left: 0
+  //       }}
+  //     >
+  //       <li
+  //         data-index="rs-1"
+  //         data-transition="zoomout"
+  //         className="tp-revslider-slidesli active-revslide"
+  //         style={{
+  //           perspective: 6000,
+  //           width: "100%",
+  //           height: "100%",
+  //           overflow: "hidden",
+  //           zIndex: 20,
+  //           visibility: "inherit",
+  //           opacity: 1,
+  //           backgroundColor: "rgba(255, 255, 255, 0)"
+  //         }}
+  //       >
+  //         <div
+  //           className="slotholder"
+  //           style={{
+  //             position: "absolute",
+  //             top: 0,
+  //             left: 0,
+  //             zIndex: 0,
+  //             width: "100%",
+  //             height: "100%",
+  //             visibility: "inherit",
+  //             opacity: 1,
+  //             transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //           }}
+  //         >
+  //           {/*Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="images/main-slider/bg-slider1.jpg" alt="" class="rev-slidebg defaultimg">*/}
+  //           <div className="tp-dottedoverlay on" />
+  //           <div
+  //             className="tp-bgimg defaultimg "
+  //             data-bgcolor="undefined"
+  //             style={{
+  //               backgroundRepeat: "no-repeat",
+  //               backgroundImage: `url(${bgSlider1})`,
+  //               backgroundSize: "cover",
+  //               backgroundPosition: "center center",
+  //               width: "100%",
+  //               height: "100%",
+  //               opacity: 1,
+  //               visibility: "inherit",
+  //               zIndex: 20
+  //             }}
+  //             src={bgSlider1}
+  //           />
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "visible",
+  //             left: 462,
+  //             top: 170,
+  //             zIndex: 1
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption"
+  //                 data-paddingbottom="[15,15,15,15]"
+  //                 data-paddingleft="[15,15,15,15]"
+  //                 data-paddingright="[0,0,0,0]"
+  //                 data-paddingtop="[10,10,10,10]"
+  //                 data-responsive_offset="on"
+  //                 data-type="text"
+  //                 data-height="none"
+  //                 data-width="['750','750','750','750']"
+  //                 data-whitespace="normal"
+  //                 data-hoffset="['0','0','0','0']"
+  //                 data-voffset="['-170','-140','-170','-170']"
+  //                 data-x="['left','left','left','left']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-textalign="['top','top','top','top']"
+  //                 data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-650774204"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   lineHeight: 30,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: "10px 0px 15px 15px",
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 16,
+  //                   whiteSpace: "normal",
+  //                   minHeight: 0,
+  //                   minWidth: 750,
+  //                   maxHeight: "none",
+  //                   maxWidth: 750,
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <span className="sub-title">
+  //                   Solutions for your businesses
+  //                 </span>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "visible",
+  //             left: 462,
+  //             top: 247,
+  //             zIndex: 1
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption"
+  //                 data-paddingbottom="[0,0,0,0]"
+  //                 data-paddingleft="[15,15,15,15]"
+  //                 data-paddingright="[15,15,15,15]"
+  //                 data-paddingtop="[0,0,0,0]"
+  //                 data-responsive_offset="on"
+  //                 data-type="text"
+  //                 data-height="none"
+  //                 data-width="['1050','750','750','480']"
+  //                 data-whitespace="normal"
+  //                 data-hoffset="['0','0','0','0']"
+  //                 data-voffset="['-40','-40','-40','-60']"
+  //                 data-x="['left','left','left','left']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-textalign="['top','top','top','top']"
+  //                 data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-924142373"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   lineHeight: 30,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: "0px 15px",
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 16,
+  //                   whiteSpace: "normal",
+  //                   minHeight: 0,
+  //                   minWidth: 1050,
+  //                   maxHeight: "none",
+  //                   maxWidth: 1050,
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <h1 className="title">
+  //                   IT Solutions <br />
+  //                   <span>&amp;</span> Technology
+  //                 </h1>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "visible",
+  //             left: 462,
+  //             top: 435,
+  //             zIndex: 1
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption"
+  //                 data-paddingbottom="[0,0,0,0]"
+  //                 data-paddingleft="[15,15,15,15]"
+  //                 data-paddingright="[15,15,15,15]"
+  //                 data-paddingtop="[0,0,0,0]"
+  //                 data-responsive_offset="on"
+  //                 data-type="text"
+  //                 data-height="none"
+  //                 data-width="['1050','750','750','480']"
+  //                 data-whitespace="normal"
+  //                 data-hoffset="['0','0','0','0']"
+  //                 data-voffset="['90','70','100','50']"
+  //                 data-x="['left','left','left','left']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-textalign="['top','top','top','top']"
+  //                 data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-789514362"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   lineHeight: 30,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: "0px 15px",
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 16,
+  //                   whiteSpace: "normal",
+  //                   minHeight: 0,
+  //                   minWidth: 1050,
+  //                   maxHeight: "none",
+  //                   maxWidth: 1050,
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <div className="text">
+  //                   There are many of passages of lorem Ipsum, but the majori
+  //                   have <br /> suffered alteration in some form.
+  //                 </div>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "visible",
+  //             left: 462,
+  //             top: 514,
+  //             zIndex: 1
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption"
+  //                 data-paddingbottom="[0,0,0,0]"
+  //                 data-paddingleft="[15,15,0,5]"
+  //                 data-paddingright="[15,15,15,15]"
+  //                 data-paddingtop="[0,0,0,0]"
+  //                 data-responsive_offset="on"
+  //                 data-type="text"
+  //                 data-height="none"
+  //                 data-width="['700','750','700','450']"
+  //                 data-whitespace="normal"
+  //                 data-hoffset="['0','0','20','10']"
+  //                 data-voffset="['170','160','210','170']"
+  //                 data-x="['left','left','left','left']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-textalign="['top','top','top','top']"
+  //                 data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-430450473"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   lineHeight: 30,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: "0px 15px",
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 16,
+  //                   whiteSpace: "normal",
+  //                   minHeight: 0,
+  //                   minWidth: 700,
+  //                   maxHeight: "none",
+  //                   maxWidth: 700,
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <button
+  //                   type="submit"
+  //                   className="theme-btn btn-style-one hover-light"
+  //                 >
+  //                   <span className="btn-title">Discover more</span>
+  //                 </button>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap tp-parallax-container"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "visible",
+  //             left: 720,
+  //             top: 503,
+  //             zIndex: 1,
+  //             transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption tp-resizeme rs-parallaxlevel-3 hidden-mobile"
+  //                 data-paddingbottom="[0,0,0,0]"
+  //                 data-paddingleft="[0,0,0,0]"
+  //                 data-paddingright="[0,0,0,0]"
+  //                 data-paddingtop="[0,0,0,0]"
+  //                 data-responsive_offset="on"
+  //                 data-type="shape"
+  //                 data-height="none"
+  //                 data-whitespace="nowrap"
+  //                 data-width="none"
+  //                 data-hoffset="['-270','-190','20','140']"
+  //                 data-voffset="['160','160','160','160']"
+  //                 data-x="['center','center','center','center']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-108459324"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   textAlign: "inherit",
+  //                   lineHeight: 0,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: 0,
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 16,
+  //                   whiteSpace: "nowrap",
+  //                   minHeight: 0,
+  //                   minWidth: 0,
+  //                   maxHeight: "none",
+  //                   maxWidth: "none",
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <figure
+  //                   style={{
+  //                     transition: "none 0s ease 0s",
+  //                     textAlign: "inherit",
+  //                     lineHeight: 0,
+  //                     borderWidth: 0,
+  //                     margin: 0,
+  //                     padding: 0,
+  //                     letterSpacing: "-1px",
+  //                     fontWeight: 400,
+  //                     fontSize: 16
+  //                   }}
+  //                 >
+  //                   <img
+  //                     src="images/icons/arrow.png"
+  //                     alt=""
+  //                     style={{
+  //                       width: 109,
+  //                       height: 64,
+  //                       transition: "none 0s ease 0s",
+  //                       textAlign: "inherit",
+  //                       lineHeight: 0,
+  //                       borderWidth: 0,
+  //                       margin: 0,
+  //                       padding: 0,
+  //                       letterSpacing: "-1px",
+  //                       fontWeight: 400,
+  //                       fontSize: 16
+  //                     }}
+  //                   />
+  //                 </figure>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </li>
+  //       <li
+  //         data-index="rs-2"
+  //         data-transition="zoomout"
+  //         className="tp-revslider-slidesli"
+  //         style={{
+  //           perspective: 6000,
+  //           width: "100%",
+  //           height: "100%",
+  //           overflow: "hidden",
+  //           zIndex: 18,
+  //           visibility: "hidden",
+  //           opacity: 0,
+  //           backgroundColor: "rgba(255, 255, 255, 0)"
+  //         }}
+  //       >
+  //         <div
+  //           className="slotholder"
+  //           style={{
+  //             position: "absolute",
+  //             top: 0,
+  //             left: 0,
+  //             zIndex: 0,
+  //             width: "100%",
+  //             height: "100%",
+  //             visibility: "inherit",
+  //             opacity: 1,
+  //             transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //           }}
+  //         >
+  //           {/*Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="images/main-slider/bg-slider2.jpg" alt="" class="rev-slidebg defaultimg">*/}
+  //           <div className="tp-dottedoverlay on" />
+  //           <div
+  //             className="tp-bgimg defaultimg "
+  //             data-bgcolor="undefined"
+  //             style={{
+  //               backgroundRepeat: "no-repeat",
+  //               backgroundImage: 'url("images/main-slider/bg-slider2.jpg")',
+  //               backgroundSize: "cover",
+  //               backgroundPosition: "center center",
+  //               width: "100%",
+  //               height: "100%",
+  //               opacity: 1,
+  //               visibility: "hidden",
+  //               zIndex: 20
+  //             }}
+  //             src="images/main-slider/bg-slider2.jpg"
+  //           />
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "hidden",
+  //             left: 0,
+  //             top: 111,
+  //             zIndex: 1
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption"
+  //                 data-paddingbottom="[15,15,15,15]"
+  //                 data-paddingleft="[15,15,15,15]"
+  //                 data-paddingright="[0,0,0,0]"
+  //                 data-paddingtop="[10,10,10,10]"
+  //                 data-responsive_offset="on"
+  //                 data-type="text"
+  //                 data-height="none"
+  //                 data-width="['750','750','750','750']"
+  //                 data-whitespace="normal"
+  //                 data-hoffset="['0','0','0','0']"
+  //                 data-voffset="['-170','-140','-170','-130']"
+  //                 data-x="['left','left','left','left']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-textalign="['top','top','top','top']"
+  //                 data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-132863562"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   lineHeight: 23,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: "8px 0px 12px 12px",
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 12,
+  //                   whiteSpace: "normal",
+  //                   minHeight: 0,
+  //                   minWidth: 585,
+  //                   maxHeight: "none",
+  //                   maxWidth: 585,
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -71, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <span className="sub-title">
+  //                   Solutions for your businesses
+  //                 </span>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "hidden",
+  //             left: 0,
+  //             top: 174,
+  //             zIndex: 1
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption"
+  //                 data-paddingbottom="[0,0,0,0]"
+  //                 data-paddingleft="[15,15,15,15]"
+  //                 data-paddingright="[15,15,15,15]"
+  //                 data-paddingtop="[0,0,0,0]"
+  //                 data-responsive_offset="on"
+  //                 data-type="text"
+  //                 data-height="none"
+  //                 data-width="['1050','750','750','480']"
+  //                 data-whitespace="normal"
+  //                 data-hoffset="['0','0','0','0']"
+  //                 data-voffset="['-40','-40','-40','-40']"
+  //                 data-x="['left','left','left','left']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-textalign="['top','top','top','top']"
+  //                 data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-616011696"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   lineHeight: 23,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: "0px 12px",
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 12,
+  //                   whiteSpace: "normal",
+  //                   minHeight: 0,
+  //                   minWidth: 375,
+  //                   maxHeight: "none",
+  //                   maxWidth: 375,
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -178, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <h1 className="title">
+  //                   IT Solutions <br />
+  //                   <span>&amp;</span> Technology
+  //                 </h1>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "hidden",
+  //             left: 0,
+  //             top: 274,
+  //             zIndex: 1
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption"
+  //                 data-paddingbottom="[0,0,0,0]"
+  //                 data-paddingleft="[15,15,15,15]"
+  //                 data-paddingright="[15,15,15,15]"
+  //                 data-paddingtop="[0,0,0,0]"
+  //                 data-responsive_offset="on"
+  //                 data-type="text"
+  //                 data-height="none"
+  //                 data-width="['1050','750','750','480']"
+  //                 data-whitespace="normal"
+  //                 data-hoffset="['0','0','0','0']"
+  //                 data-voffset="['90','70','90','80']"
+  //                 data-x="['left','left','left','left']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-textalign="['top','top','top','top']"
+  //                 data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-320705047"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   lineHeight: 23,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: "0px 12px",
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 12,
+  //                   whiteSpace: "normal",
+  //                   minHeight: 0,
+  //                   minWidth: 375,
+  //                   maxHeight: "none",
+  //                   maxWidth: 375,
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -62, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <div className="text">
+  //                   There are many of passages of lorem Ipsum, but the majori
+  //                   have <br /> suffered alteration in some form.
+  //                 </div>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "hidden",
+  //             left: 0,
+  //             top: 328,
+  //             zIndex: 1
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption"
+  //                 data-paddingbottom="[0,0,0,0]"
+  //                 data-paddingleft="[15,15,0,5]"
+  //                 data-paddingright="[15,15,15,15]"
+  //                 data-paddingtop="[0,0,0,0]"
+  //                 data-responsive_offset="on"
+  //                 data-type="text"
+  //                 data-height="none"
+  //                 data-width="['700','750','700','450']"
+  //                 data-whitespace="normal"
+  //                 data-hoffset="['0','0','20','0']"
+  //                 data-voffset="['170','160','210','150']"
+  //                 data-x="['left','left','left','left']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-textalign="['top','top','top','top']"
+  //                 data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-461247173"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   lineHeight: 23,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: "0px 12px 0px 4px",
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 12,
+  //                   whiteSpace: "normal",
+  //                   minHeight: 0,
+  //                   minWidth: 351,
+  //                   maxHeight: "none",
+  //                   maxWidth: 351,
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -63, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <button
+  //                   type="submit"
+  //                   className="theme-btn btn-style-one hover-light"
+  //                 >
+  //                   <span className="btn-title">Discover more</span>
+  //                 </button>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div
+  //           className="tp-parallax-wrap tp-parallax-container"
+  //           style={{
+  //             position: "absolute",
+  //             display: "block",
+  //             visibility: "hidden",
+  //             transform: "matrix(1, 0, 0, 1, 0, 0)",
+  //             left: 254,
+  //             top: 341,
+  //             zIndex: 1
+  //           }}
+  //         >
+  //           <div
+  //             className="tp-loop-wrap"
+  //             style={{ position: "absolute", display: "block" }}
+  //           >
+  //             <div
+  //               className="tp-mask-wrap"
+  //               style={{
+  //                 position: "absolute",
+  //                 display: "block",
+  //                 overflow: "hidden",
+  //                 transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //               }}
+  //             >
+  //               <div
+  //                 className="tp-caption tp-resizeme rs-parallaxlevel-3 hidden-mobile"
+  //                 data-paddingbottom="[0,0,0,0]"
+  //                 data-paddingleft="[0,0,0,0]"
+  //                 data-paddingright="[0,0,0,0]"
+  //                 data-paddingtop="[0,0,0,0]"
+  //                 data-responsive_offset="on"
+  //                 data-type="shape"
+  //                 data-height="none"
+  //                 data-whitespace="nowrap"
+  //                 data-width="none"
+  //                 data-hoffset="['-270','-190','20','140']"
+  //                 data-voffset="['160','160','160','160']"
+  //                 data-x="['center','center','center','center']"
+  //                 data-y="['middle','middle','middle','middle']"
+  //                 data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+  //                 id="layer-316328937"
+  //                 style={{
+  //                   visibility: "inherit",
+  //                   transition: "none 0s ease 0s",
+  //                   textAlign: "inherit",
+  //                   lineHeight: 0,
+  //                   borderWidth: 0,
+  //                   margin: 0,
+  //                   padding: 0,
+  //                   letterSpacing: "-1px",
+  //                   fontWeight: 400,
+  //                   fontSize: 12,
+  //                   whiteSpace: "nowrap",
+  //                   minHeight: 0,
+  //                   minWidth: 0,
+  //                   maxHeight: "none",
+  //                   maxWidth: "none",
+  //                   opacity: 1,
+  //                   transform:
+  //                     "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 66, 0, 1)",
+  //                   transformOrigin: "50% 50% 0px"
+  //                 }}
+  //               >
+  //                 <figure
+  //                   style={{
+  //                     transition: "none 0s ease 0s",
+  //                     textAlign: "inherit",
+  //                     lineHeight: 0,
+  //                     borderWidth: 0,
+  //                     margin: 0,
+  //                     padding: 0,
+  //                     letterSpacing: "-1px",
+  //                     fontWeight: 400,
+  //                     fontSize: 12
+  //                   }}
+  //                 >
+  //                   <img
+  //                     src="images/icons/arrow.png"
+  //                     alt=""
+  //                     style={{
+  //                       width: "85.0903px",
+  //                       height: "49.9613px",
+  //                       transition: "none 0s ease 0s",
+  //                       textAlign: "inherit",
+  //                       lineHeight: 0,
+  //                       borderWidth: 0,
+  //                       margin: 0,
+  //                       padding: 0,
+  //                       letterSpacing: "-1px",
+  //                       fontWeight: 400,
+  //                       fontSize: 12
+  //                     }}
+  //                   />
+  //                 </figure>
+  //               </div>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       </li>
+  //     </ul>
+  //     <div className="tp-loader off" style={{ display: "none" }}>
+  //       <div className="dot1" />
+  //       <div className="dot2" />
+  //       <div className="bounce1" />
+  //       <div className="bounce2" />
+  //       <div className="bounce3" />
+  //     </div>
+  //     <div
+  //       className="tp-bannertimer"
+  //       style={{
+  //         visibility: "visible",
+  //         width: "0%",
+  //         transform: "matrix(1, 0, 0, 1, 0, 0)"
+  //       }}
+  //     />
+  //     <div
+  //       className="tp-leftarrow tparrows gyges"
+  //       style={{
+  //         top: "50%",
+  //         transform: "matrix(1, 0, 0, 1, 15, -80)",
+  //         left: 0,
+  //         visibility: "hidden",
+  //         opacity: 0
+  //       }}
+  //     />
+  //     <div
+  //       className="tp-rightarrow tparrows gyges"
+  //       style={{
+  //         top: "50%",
+  //         transform: "matrix(1, 0, 0, 1, -95, -80)",
+  //         left: "100%",
+  //         visibility: "hidden",
+  //         opacity: 0
+  //       }}
+  //     />
+  //   </div>
+  // </div>
+  //   </section>
+
+  
+
+  
   )
 }
 

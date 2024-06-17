@@ -1,6 +1,6 @@
 import pageTitle from '../assets/images/page-title.jpg'
 
-const PageTittle = () => {
+const PageTittle = ({name}) => {
   return (
     <section
     className="page-title"
@@ -8,7 +8,7 @@ const PageTittle = () => {
   >
     <div className="auto-container">
       <div className="title-outer">
-        <h1 className="title">Pricing</h1>
+        <h1 className="title">{name}</h1>
         <ul className="page-breadcrumb">
           <li>
             <a href="index.html">Home</a>
@@ -16,7 +16,7 @@ const PageTittle = () => {
           <li>
             <a href="#">Pages</a>
           </li>
-          <li>Pricing</li>
+          <li>{name}</li>
         </ul>
       </div>
     </div>

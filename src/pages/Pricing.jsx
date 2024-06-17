@@ -6,7 +6,7 @@ const Pricing = () => {
   return (
    <>
    <Header/>
-   <PageTittle/>
+   <PageTittle name={'Pricing'}/>
    <PricingSection/>
    <Footer/>
    </>
