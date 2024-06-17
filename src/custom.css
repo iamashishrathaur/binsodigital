@@ -78,3 +78,32 @@ ul{
 .services-section-four .bottom-box a{
   color: var(--link-color);
 }
+
+/* Service list */
+.service-item {
+    position: relative;
+    height: 300px;
+    padding: 0 30px;
+    transition: .5s;
+}
+
+.service-item .service-icon {
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--theme-color1);
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+.service-item .service-icon i {
+    transform: rotate(45deg);
+}
+
+.bg-con-background{
+    background: var(--theme-color1);
+}
+
+
