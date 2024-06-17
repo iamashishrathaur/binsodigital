@@ -21,7 +21,8 @@ const AboutSection = () => {
                   <div className="inner">
                     <div className="icon-box">
                       {" "}
-                      <i className="icon flaticon-design" />{" "}
+                      <i className="icon fa fa-laptop-code"></i>
+                      {/* <i className="icon flaticon-design" />{" "} */}
                       <span className="count">90+</span>{" "}
                     </div>
                     <h6 className="title">Years of Experience</h6>

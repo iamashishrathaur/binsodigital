@@ -18,7 +18,8 @@ const ServiceSection = () => {
             <div className="content-box">
               <div className="inner">
                  {/* <Reputation/> */}
-                <i className="icon flaticon-reputation" />
+                 <i className="icon fa-brands fa-teamspeak"></i>
+                {/* <i className="icon flaticon-reputation" /> */}
                 <h5 className="title">
                   <a href="page-service-details.html">
                     Perfect solutions <br />
@@ -38,8 +39,8 @@ const ServiceSection = () => {
             </figure>
             <div className="content-box">
               <div className="inner">
-                <TfiMedall className='icon'/>
-                <i className="icon flaticon-medal" />
+              <i className="icon fa fa-medal"></i>
+                {/* <i className="icon flaticon-medal" /> */}
                 <h5 className="title">
                   <a href="page-service-details.html">
                     Choose the best <br />
@@ -59,7 +60,8 @@ const ServiceSection = () => {
             </figure>
             <div className="content-box">
               <div className="inner">
-                <i className="icon flaticon-programmer" />
+                {/* <i className="icon flaticon-programmer" /> */}
+                <i className="icon fa-solid fa-user-secret"></i>
                 <h5 className="title">
                   <a href="page-service-details.html">
                     We know how to <br />
