@@ -3,13 +3,14 @@ import pageTitle from '../assets/images/page-title.jpg'
 const PageTittle = ({name}) => {
   return (
     <section
-    className="page-title"
+    className="page-title tp-dottedoverlay on"
     style={{ backgroundImage: `url(${pageTitle})` }}
   >
+     {/* <div className='tp-dottedoverlay on'></div> */}
     <div className="auto-container">
       <div className="title-outer">
-        <h1 className="title">{name}</h1>
-        <ul className="page-breadcrumb">
+        <h1 className="title" style={{zIndex:'4'}}> {name}</h1>
+        <ul className="page-breadcrumb" style={{zIndex:'4'}}>
           <li>
             <a href="index.html">Home</a>
           </li>
