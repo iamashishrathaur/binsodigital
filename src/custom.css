@@ -1,4 +1,5 @@
 /* Top Header */
+
 .list-style-one {
     margin-bottom: 0;
 }
@@ -106,4 +107,17 @@ ul{
     background: var(--theme-color1);
 }
 
+/* Service details */
 
+.sidebar-service-list li a {
+    color: var(--link-color);
+}
+
+.services-details__content h3{
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    line-height: var(--line-height-heading);
+    color: var(--headings-color);
+    font-family: var(--title-font);
+    margin-bottom: 1rem;
+}

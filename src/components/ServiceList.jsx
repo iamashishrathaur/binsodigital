@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -67,9 +68,9 @@ const ServiceList = () => {
                   {service.description}
                 </p>
                 <div className="button-box">
-                  <a href="page-service-details.html" className="read-more">
+                  <Link to={'/service-details'} className="read-more">
                     Read More <i className="fa fa-angle-right"></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

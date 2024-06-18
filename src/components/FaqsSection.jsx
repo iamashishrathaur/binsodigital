@@ -1,11 +1,31 @@
 import React, { useState } from 'react';
-import Image1 from '../assets/images/image-1.jpg'
-const FaqsSection = () => {
-  const [isActive, setIsActive] = useState('second');
+import Image1 from '../assets/images/image-1.jpg';
 
-  const handleShowMore = (box) => {
-    setIsActive(box);
+const FaqsSection = () => {
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
   };
+
+  const faqData = [
+    {
+      question: "Is my technology allowed on tech?",
+      answer: "Yes, our platform supports a wide range of technologies. If you have specific questions about compatibility, please contact our support team."
+    },
+    {
+      question: "How to soft launch your business?",
+      answer: "To soft launch your business, start by targeting a smaller audience to test your product and gather feedback. This allows you to make necessary adjustments before a full-scale launch."
+    },
+    {
+      question: "How to turn visitors into contributors?",
+      answer: "Engage visitors by providing valuable content, creating a community atmosphere, and offering incentives for contributions. Encourage interaction and feedback to foster a sense of belonging."
+    },
+    {
+      question: "How can I find my solutions?",
+      answer: "Our platform offers a comprehensive search function and categorized content to help you find the solutions you need quickly and easily. If you need further assistance, our support team is here to help."
+    }
+  ];
 
   return (
     <section className="faqs-section">
@@ -19,26 +39,17 @@ const FaqsSection = () => {
               </h2>
             </div>
             <div className="inner-column">
-              <ul className="accordion-box" style={{padding:0, margin:0}}>
-                {[
-                  { id: 'first', question: 'How to get free immigration?' },
-                  { id: 'second', question: 'Which country is good for residents?' },
-                  { id: 'third', question: 'Canada study visa requirements?' },
-                  { id: 'fourth', question: 'How to get free immigration?' },
-                ].map((faq, index) => (
-                  <li
-                    key={faq.id}
-                    className={`accordion block ${isActive === faq.id ? 'active-block' : ''}`}
-                    onClick={() => handleShowMore(faq.id)}
-                  >
-                    <div className={`acc-btn ${isActive === faq.id ? 'active' : ''}`}>
-                      <span>{`0${index + 1}.`}</span>{faq.question}
-                      <div className="icon fa fa-angle-down" />
+              <ul className="accordion-box" style={{ padding: 0, margin: 0 }}>
+                {faqData.map((item, index) => (
+                  <li key={index} className={`accordion block ${activeIndex === index ? 'active-block' : ''}`}>
+                    <div className={`acc-btn ${activeIndex === index ? 'active' : ''}`} onClick={() => toggleAccordion(index)}>
+                      {item.question}
+                      <div className={`icon fa fa-plus ${activeIndex === index ? 'open' : ''}`} />
                     </div>
-                    <div className={`acc-content ${isActive === faq.id ? 'current' : ''}`}>
+                    <div className={`acc-content ${activeIndex === index ? 'current' : ''}`}>
                       <div className="content">
                         <div className="text">
-                          Sed rhoncus facilisis purus, at accumsan purus sagittis vitae. Nullam acelit at eros imperdiet. Pellentesque sit.
+                          {item.answer}
                         </div>
                       </div>
                     </div>
@@ -51,7 +62,7 @@ const FaqsSection = () => {
             <div className="inner-column">
               <div className="image-box">
                 <figure className="image m-0">
-                  <img src={Image1} alt="" />
+                  <img src={Image1} alt="Technology Solutions" />
                 </figure>
                 <span className="float-text">Why Choose us</span>
               </div>

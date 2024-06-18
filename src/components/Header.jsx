@@ -104,7 +104,7 @@ const Header = () => {
               <li className="current"><Link to={'/'}>Home</Link></li>
                 <li className=""><Link to={'/services'}>Services</Link></li>
                 <li className=""><Link to={'/about'}>About</Link></li>
-                <li className=""><Link to={'/team'}>Team</Link></li>
+                <li className=""><Link to={'/pricing'}>Pricing</Link></li>
                 <li className=""><Link to={'/contract'}>Contact</Link></li>
               </ul>
             </nav>

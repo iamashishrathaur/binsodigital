@@ -602,9 +602,9 @@ ul,li {
   color: var(--theme-color1)
 }
 
-.list-style-one li a:hover span {
+/* .list-style-one li a:hover span {
   color: #050c18
-}
+} */
 
 .list-style-one li a span {
   font-size: 12px;
@@ -612,7 +612,7 @@ ul,li {
 }
 
 .list-style-one li span {
-  color: #050c18;
+  color: #8f8f8f;
   font-size: 12px;
   font-weight: 400
 }
@@ -12076,7 +12076,14 @@ ul,li {
 
 .accordion-box .block .acc-content {
   position: relative;
-  display: none
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordion-box .block .acc-content.current {
+  max-height: 500px; 
+  transition: 0.9s ease-in;
+
 }
 
 .accordion-box .block .acc-content .content {
@@ -12092,9 +12099,7 @@ ul,li {
   margin-bottom: 0
 }
 
-.accordion-box .block .acc-content.current {
-  display: block
-}
+
 
 .accordion-box.style-two .block {
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,.1);

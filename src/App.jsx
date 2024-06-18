@@ -5,6 +5,7 @@ import Pricing from './pages/Pricing'
 import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import NotFound from './pages/NotFound'
 import Services from './pages/Services'
+import ServiceDetails from './pages/ServiceDetails'
 
 function App() {
 
@@ -20,6 +21,10 @@ function App() {
     {
       path:'/services',
       element:<Services/>
+    },
+    {
+      path:'/service-details',
+      element:<ServiceDetails/>
     },
     {
       path:'*',
