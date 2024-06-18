@@ -63,7 +63,6 @@ const ContactDetails = () => {
         height='550'
         style={{ border: 0 }}
         allowFullScreen=""
-        loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         />
 
