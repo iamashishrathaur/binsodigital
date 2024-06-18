@@ -6,6 +6,7 @@ import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import NotFound from './pages/NotFound'
 import Services from './pages/Services'
 import ServiceDetails from './pages/ServiceDetails'
+import Contact from './pages/Contact'
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
     {
       path:'/service-details',
       element:<ServiceDetails/>
+    },
+    {
+      path:'/contact',
+      element:<Contact/>
     },
     {
       path:'*',

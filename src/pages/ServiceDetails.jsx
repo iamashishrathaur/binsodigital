@@ -1,96 +1,29 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import PageTittle from "../components/PageTittle"
-import ServiceList from "../components/ServiceList"
 import serviceDetails from '../assets/images/service-details.jpg'
 import serviceD1 from '../assets/images/service-d1.jpg'
 import serviceD2 from '../assets/images/service-d2.jpg'
-import FeqSection2 from "../components/FaqsSection2"
 import FaqsSection2 from "../components/FaqsSection2"
+import HelpShape from "../components/HelpShape"
+import SidebarServiceList from "../components/SidebarServiceList"
+import FileBtn from "../components/FileBtn"
 const ServiceDetails = () => {
   return (
    <>
     <Header/>
     <PageTittle name={'Service Details'}/>
     <section className="services-details">
-  <div className="container">
-    <div className="row">
-      <div className="col-xl-4 col-lg-4">
-        <div className="service-sidebar">
-          <div className="sidebar-widget service-sidebar-single">
-            <div className="sidebar-service-list">
-              <ul>
-                <li>
-                  <a href="page-service-details.html" className="current">
-                    <i className="fas fa-angle-right" />
-                    <span>Digital Agency</span>
-                  </a>
-                </li>
-                <li className="current">
-                  <a href="page-service-details.html">
-                    <i className="fas fa-angle-right" />
-                    <span>Web designing</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="page-service-details.html">
-                    <i className="fas fa-angle-right" />
-                    <span>Web development</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="page-service-details.html">
-                    <i className="fas fa-angle-right" />
-                    <span>Web application</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="page-service-details.html">
-                    <i className="fas fa-angle-right" />
-                    <span>Digital Marketing</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="page-service-details.html">
-                    <i className="fas fa-angle-right" />
-                    <span>App Development</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="service-details-help">
-              <div className="help-shape-1" />
-              <div className="help-shape-2" />
-              <h2 className="help-title">
-                Contact with <br /> us for any <br /> advice
-              </h2>
-              <div className="help-icon">
-              <i className="fa-thin fa-phone"></i>
-                <span className=" lnr-icon-phone-handset" />
-              </div>
-              <div className="help-contact">
-                <p>Need help? Talk to an expert</p>
-                <a href="tel:12463330079">+892 ( 123 ) 112 - 9999</a>
-              </div>
-            </div>
-            <div className="sidebar-widget service-sidebar-single mt-4">
-              <div
-                className="service-sidebar-single-btn wow fadeInUp animated"
-                data-wow-delay="0.5s"
-                data-wow-duration="1200m"
-                style={{
-                  visibility: "visible",
-                  animationDelay: "0.5s",
-                  animationName: "fadeInUp"
-                }}
-              >
-                <a href="#" className="theme-btn btn-style-one d-grid">
-                  <span className="btn-title">
-                    <span className="fas fa-file-pdf" /> download pdf file
-                  </span>
-                </a>
-              </div>
-            </div>
+    <div className="container">
+      <div className="row">
+        <div className="col-xl-4 col-lg-4">
+          <div className="service-sidebar">
+            <div className="sidebar-widget service-sidebar-single">
+
+            <SidebarServiceList/>
+            <HelpShape/>
+            <FileBtn/>
+
           </div>
         </div>
       </div>

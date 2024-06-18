@@ -105,7 +105,7 @@ const Header = () => {
                 <li className=""><Link to={'/services'}>Services</Link></li>
                 <li className=""><Link to={'/about'}>About</Link></li>
                 <li className=""><Link to={'/pricing'}>Pricing</Link></li>
-                <li className=""><Link to={'/contract'}>Contact</Link></li>
+                <li className=""><Link to={'/contact'}>Contact</Link></li>
               </ul>
             </nav>
           </div>
@@ -209,7 +209,7 @@ const Header = () => {
                 <li className=""><Link to={'/services'}>Services</Link></li>
                 <li className=""><Link to={'/about'}>About</Link></li>
                 <li className=""><Link to={'/team'}>Team</Link></li>
-                <li className=""><Link to={'/contract'}>Contact</Link></li>
+                <li className=""><Link to={'/contact'}>Contact</Link></li>
             </ul>
             <ul className="contact-list-one">
             <li>
@@ -250,7 +250,7 @@ const Header = () => {
                 <li className=""><Link to={'/services'}>Services</Link></li>
                 <li className=""><Link to={'/about'}>About</Link></li>
                 <li className=""><Link to={'/team'}>Team</Link></li>
-                <li className=""><Link to={'/contract'}>Contact</Link></li>
+                <li className=""><Link to={'/contact'}>Contact</Link></li>
                 </ul>
                 </div>
               </nav>
