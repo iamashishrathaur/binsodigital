@@ -101,11 +101,11 @@ const Header = () => {
           <div className="nav-outer">
             <nav className="main-menu">
               <ul className="navigation">
-              <li className="current"><Link to={'/'}>Home</Link></li>
-                <li className=""><Link to={'/services'}>Services</Link></li>
-                <li className=""><Link to={'/about'}>About</Link></li>
-                <li className=""><Link to={'/pricing'}>Pricing</Link></li>
-                <li className=""><Link to={'/contact'}>Contact</Link></li>
+                <li className={location.pathname === '/' ? 'current':''}><Link to={'/'}>Home</Link></li>
+                <li className={location.pathname === '/services' ? 'current':''}><Link to={'/services'}>Services</Link></li>
+                <li className={location.pathname === '/about' ? 'current':''}><Link to={'/about'}>About</Link></li>
+                <li className={location.pathname === '/pricing' ? 'current':''}><Link to={'/pricing'}>Pricing</Link></li>
+                <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
               </ul>
             </nav>
           </div>
@@ -205,11 +205,11 @@ const Header = () => {
           <div className="close-btn"><i className="icon fa fa-times" onClick={()=>setIsMobileMenu(false)}></i></div>
           </div>
           <ul className="navigation clearfix">
-                <li className="current"><Link to={'/'}>Home</Link></li>
-                <li className=""><Link to={'/services'}>Services</Link></li>
-                <li className=""><Link to={'/about'}>About</Link></li>
-                <li className=""><Link to={'/team'}>Team</Link></li>
-                <li className=""><Link to={'/contact'}>Contact</Link></li>
+                <li className={location.pathname === '/' ? 'current':''}><Link to={'/'}>Home</Link></li>
+                <li className={location.pathname === '/services' ? 'current':''}><Link to={'/services'}>Services</Link></li>
+                <li className={location.pathname === '/about' ? 'current':''}><Link to={'/about'}>About</Link></li>
+                <li className={location.pathname === '/pricing' ? 'current':''}><Link to={'/pricing'}>Pricing</Link></li>
+                <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
             </ul>
             <ul className="contact-list-one">
             <li>
@@ -246,11 +246,11 @@ const Header = () => {
               <nav className="main-menu">
                 <div className="navbar-collapse show collapse clearfix">
                 <ul className="navigation clearfix">
-                <li className="current"><Link to={'/'}>Home</Link></li>
-                <li className=""><Link to={'/services'}>Services</Link></li>
-                <li className=""><Link to={'/about'}>About</Link></li>
-                <li className=""><Link to={'/team'}>Team</Link></li>
-                <li className=""><Link to={'/contact'}>Contact</Link></li>
+                <li className={location.pathname === '/' ? 'current':''}><Link to={'/'}>Home</Link></li>
+                <li className={location.pathname === '/services' ? 'current':''}><Link to={'/services'}>Services</Link></li>
+                <li className={location.pathname === '/about' ? 'current':''}><Link to={'/about'}>About</Link></li>
+                <li className={location.pathname === '/pricing' ? 'current':''}><Link to={'/pricing'}>Pricing</Link></li>
+                <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
                 </ul>
                 </div>
               </nav>
