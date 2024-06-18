@@ -140,3 +140,7 @@ ul{
 .contact-details__info .text a{
     color: var(--link-color);
 }
+
+.team-contact-form .btn-style-one {
+ margin-inline: 0.15rem;
+}
