@@ -144,3 +144,20 @@ ul{
 .team-contact-form .btn-style-one {
  margin-inline: 0.15rem;
 }
+
+/* Mobile navigation bar */
+
+.mobile-menu .navigation .mobile-dropdown-list {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.8s ease-out, opacity 0.8s ease-out;
+  }
+  
+  .mobile-menu .navigation .mobile-dropdown-list.active {
+    display: block;
+    max-height: 500px; /* Set to a value large enough to fit the content */
+    opacity: 1;
+    transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  }

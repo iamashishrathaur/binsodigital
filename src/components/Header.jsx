@@ -5,6 +5,16 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [isHeaderActive, setIsHeaderActive] = useState(false);
   const [isMobileMenu, setIsMobileMenu] = useState(false)
+  const [isServicesActive, setIsServicesActive] = useState(false);
+  const [isPricingActive, setIsPricingActive] = useState(false);
+
+  const handleServicesToggle = () => {
+    setIsServicesActive(!isServicesActive);
+  };
+
+  const handlePricingToggle = () => {
+    setIsPricingActive(!isPricingActive);
+  };
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -102,9 +112,24 @@ const Header = () => {
             <nav className="main-menu">
               <ul className="navigation">
                 <li className={location.pathname === '/' ? 'current':''}><Link to={'/'}>Home</Link></li>
-                <li className={location.pathname === '/services' ? 'current':''}><Link to={'/services'}>Services</Link></li>
                 <li className={location.pathname === '/about' ? 'current':''}><Link to={'/about'}>About</Link></li>
-                <li className={location.pathname === '/pricing' ? 'current':''}><Link to={'/pricing'}>Pricing</Link></li>
+                <li className={`${location.pathname === '/services' ? 'current':'' || location.pathname === '/service-details' ? 'current':''} dropdown`}><Link to={'/services'}>Services</Link>
+                <ul>
+                <li><Link to={'/services'}>Services</Link></li>
+                <li><Link to={'/service-details'}>Service Details</Link></li>
+                </ul>
+                </li>
+                <li className={`${location.pathname === '/pricing' ? 'current':''} dropdown`}><Link to={'/pricing'}>Pricing</Link>
+                 <ul>
+                   <li><Link to={'/pricing'}>Static Website</Link></li>
+                   <li><Link to={'/pricing'}>Dynamic Website</Link></li>
+                   <li><Link to={'/pricing'}>E-Commerce Website</Link></li>
+                   <li><Link to={'/pricing'}>App Development</Link></li>
+                   <li><Link to={'/pricing'}>SEO Service</Link></li>
+                   <li><Link to={'/pricing'}>Hosting</Link></li>
+                 </ul>
+                </li>
+                <li className={location.pathname === '/projects' ? 'current':''}><Link to={'/projects'}>Projects</Link></li>
                 <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
               </ul>
             </nav>
@@ -205,10 +230,33 @@ const Header = () => {
           <div className="close-btn"><i className="icon fa fa-times" onClick={()=>setIsMobileMenu(false)}></i></div>
           </div>
           <ul className="navigation clearfix">
-                <li className={location.pathname === '/' ? 'current':''}><Link to={'/'}>Home</Link></li>
-                <li className={location.pathname === '/services' ? 'current':''}><Link to={'/services'}>Services</Link></li>
+          <li className={location.pathname === '/' ? 'current':''}><Link to={'/'}>Home</Link></li>
                 <li className={location.pathname === '/about' ? 'current':''}><Link to={'/about'}>About</Link></li>
-                <li className={location.pathname === '/pricing' ? 'current':''}><Link to={'/pricing'}>Pricing</Link></li>
+                <li className={`${location.pathname === '/services' ? 'current':'' || location.pathname === '/service-details' ? 'current':''} dropdown`}>
+                <Link to={'#'} onClick={handleServicesToggle}>Services</Link>
+                <ul className={`mobile-dropdown-list ${isServicesActive ? 'active' : ''}`}>
+                  <li><Link to="/services">Services</Link></li>
+                  <li><Link to="/service-details">Service Details</Link></li>
+                </ul>
+                <div className={`dropdown-btn ${isServicesActive ? 'active' : ''}`} onClick={handleServicesToggle}>
+                  <i className="fa fa-angle-down"></i>
+                </div>
+              </li>
+              <li className={`${location.pathname === '/pricing' ? 'current':''} dropdown`}>
+                <Link to={'#'} onClick={handlePricingToggle}>Pricing</Link>
+                <ul className={`mobile-dropdown-list ${isPricingActive ? 'active' : ''}`}>
+                  <li><Link to="/pricing">Static Website</Link></li>
+                  <li><Link to="/pricing">Dynamic Website</Link></li>
+                  <li><Link to="/pricing">E-Commerce Website</Link></li>
+                  <li><Link to="/pricing">App Development</Link></li>
+                  <li><Link to="/pricing">SEO Service</Link></li>
+                  <li><Link to="/pricing">Hosting</Link></li>
+                </ul>
+                <div className={`dropdown-btn ${isPricingActive ? 'active' : ''}`} onClick={handlePricingToggle}>
+                  <i className="fa fa-angle-down"></i>
+                </div>
+              </li>
+                <li className={location.pathname === '/projects' ? 'current':''}><Link to={'/projects'}>Projects</Link></li>
                 <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
             </ul>
             <ul className="contact-list-one">
@@ -247,9 +295,25 @@ const Header = () => {
                 <div className="navbar-collapse show collapse clearfix">
                 <ul className="navigation clearfix">
                 <li className={location.pathname === '/' ? 'current':''}><Link to={'/'}>Home</Link></li>
-                <li className={location.pathname === '/services' ? 'current':''}><Link to={'/services'}>Services</Link></li>
                 <li className={location.pathname === '/about' ? 'current':''}><Link to={'/about'}>About</Link></li>
-                <li className={location.pathname === '/pricing' ? 'current':''}><Link to={'/pricing'}>Pricing</Link></li>
+                <li className={`${location.pathname === '/services' ? 'current':'' || location.pathname === '/service-details' ? 'current':''} dropdown`}><Link to={'/services'}>Services</Link>
+                <ul>
+                <li><Link to={'/services'}>Services</Link></li>
+                <li><Link to={'/service-details'}>Service Details</Link></li>
+                </ul>
+                </li>
+                <li className={`${location.pathname === '/pricing' ? 'current':''} dropdown`}><Link to={'/pricing'}>Pricing</Link>
+                 <ul>
+                   <li><Link to={'/pricing'}>Static Website</Link></li>
+                   <li><Link to={'/pricing'}>Dynamic Website</Link></li>
+                   <li><Link to={'/pricing'}>E-Commerce Website</Link></li>
+                   <li><Link to={'/pricing'}>App Development</Link></li>
+                   <li><Link to={'/pricing'}>SEO Service</Link></li>
+                   <li><Link to={'/pricing'}>Hosting</Link></li>
+                 </ul>
+                 
+                </li>
+                <li className={location.pathname === '/projects' ? 'current':''}><Link to={'/projects'}>Projects</Link></li>
                 <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
                 </ul>
                 </div>
