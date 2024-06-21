@@ -161,3 +161,22 @@ ul{
     opacity: 1;
     transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out;
   }
+
+
+  /*  About Section 2*/
+
+  .about-section-four .content-column .info-box .inner .title{
+    font-size: var(--h6-font-size);
+    font-weight: var(--h6-font-weight);
+    line-height: var(--line-height-heading-small);
+  }
+
+  .about-section-four .image-column .inner-column .exp-box .inner .title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--h2-font-weight);
+    line-height: var(--line-height-heading);
+  }
+
+  .about-section-four{
+    padding: 10px 0 90px;
+  }

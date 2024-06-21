@@ -1,7 +1,3 @@
-import React from 'react'
-import Logo from '../assets/images/logo-2.webp'
-import Slider2 from '../assets/images/bg-slider2.jpg'
-import ServiceSection from '../components/ServiceSection'
 import ClientsSection from '../components/ClientSection'
 import FeaturesSection from '../components/FeaturesSection'
 import FaqsSection from '../components/FaqsSection'
@@ -13,10 +9,11 @@ import MapSection from '../components/MapSection'
 import Header from '../components/Header'
 import MainSlider from '../components/MainSlider'
 import Preloader from '../components/Preloader'
-import AboutSection from '../components/AboutSection'
 import ServicesSection4 from '../components/ServicesSection4'
 import ScrollToTop from '../components/ScrollToTop'
 import Footer from '../components/Footer'
+import AboutSection2 from '../components/AboutSection2'
+import FeaturesSection2 from '../components/FeaturesSection2'
 const Home1 = () => {
   return (
     <>
@@ -25,10 +22,11 @@ const Home1 = () => {
     <Header/>
     <MainSlider/>
    
-   
-  <ServiceSection/>
+  <FeaturesSection2/>
+  {/* <ServiceSection/> */}
 
- <AboutSection/>
+ {/* <AboutSection/> */}
+ <AboutSection2/>
    <ServicesSection4/>
      <ClientsSection/>
      <FeaturesSection/>
