@@ -4,7 +4,15 @@ import { FaCheck } from "react-icons/fa6"
 const PricingSection = () => {
   return (
   <section className="pricing-section style-two">
+    <div className="sec-title text-center">
+    <span className="sub-title">Pricing Plans</span>
+    <h2>
+    We are Offering Competitive <br />Prices for Our Clients
+    </h2>
+    </div>
+    <br />
     <div className="bg" />
+
     <div className="auto-container">
       <div className="row">
         <div className="pricing-block col-lg-4 col-md-6 col-sm-12">

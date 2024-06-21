@@ -47,6 +47,7 @@ const ServiceList = () => {
       data-wow-delay="0.1s"
     >
       <div className="container py-5">
+        <br />
         <div className="sec-title text-center">
           <span className="sub-title">WHAT WE’RE OFFERING</span>
           <h2>

@@ -7,6 +7,7 @@ const Pricing = () => {
    <>
    <Header/>
    <PageTittle name={'Pricing'}/>
+   
    <PricingSection/>
    <Footer/>
    </>

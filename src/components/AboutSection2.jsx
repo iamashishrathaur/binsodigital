@@ -1,4 +1,9 @@
+import { Search } from 'react-flaticons'
 import aboutImage from '../assets/images/about4-1.webp'
+import { MdCarRepair, MdDesignServices, MdHomeRepairService } from 'react-icons/md'
+import { RiStockLine } from 'react-icons/ri'
+import { PiRanking, PiRankingLight, PiRankingThin } from 'react-icons/pi'
+import { CgIfDesign, CgWebsite } from 'react-icons/cg'
 
 const AboutSection2 = () => {
   return (
@@ -20,6 +25,9 @@ const AboutSection2 = () => {
             <div className="info-box col-md-12">
               <div className="inner">
                 <i className="icon flaticon-repair" />
+                {/* <i className='icon'></i> */}
+                {/* <MdHomeRepairService className='icon'/> */}
+                <CgIfDesign className='icon'/>
                 <h6 className="title">Quality web designing</h6>
                 <div className="text">
                   It is a long established fact that a reader will be distracted
@@ -29,9 +37,10 @@ const AboutSection2 = () => {
             </div>
             <div className="info-box col-md-12">
               <div className="inner">
+                <PiRankingLight className='icon'/>
                 <i className="icon flaticon-search-engine" />
                 <h6 className="title">SEO &amp; content Writing</h6>
-                <div className="text">
+                 <div className="text">
                   It is a long established fact that a reader will be distracted
                   the readable contentk layout.
                 </div>

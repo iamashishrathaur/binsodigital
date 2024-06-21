@@ -7,6 +7,8 @@ import NotFound from './pages/NotFound'
 import Services from './pages/Services'
 import ServiceDetails from './pages/ServiceDetails'
 import Contact from './pages/Contact'
+import Projects from './pages/Projects'
+import About from './pages/About'
 
 function App() {
 
@@ -30,6 +32,14 @@ function App() {
     {
       path:'/contact',
       element:<Contact/>
+    },
+    {
+      path:'/projects',
+      element:<Projects/>
+    },
+    {
+      path:'/about',
+      element:<About/>
     },
     {
       path:'*',
