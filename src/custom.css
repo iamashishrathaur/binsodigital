@@ -185,3 +185,12 @@ ul{
     position: relative;
     overflow: hidden;
   }
+
+
+  /* Hero Section */
+
+  @media (max-width:576px) {
+    .banner-style-one .inner-column .title span:before{
+        bottom: 6px;
+    }
+  }
