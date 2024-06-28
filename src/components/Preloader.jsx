@@ -1,9 +1,15 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 
-const Preloader = () => {
+const Preloader = ({ isActive }) => {
   return (
-    <div className="preloader" style={{display:'none'}}/>
-  )
-}
+    <div className={`preloader ${isActive ? 'active' : ''}`}>
+      {/* Preloader content */}
+    </div>
+  );
+};
 
-export default Preloader
+Preloader.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+};
+
+export default Preloader;

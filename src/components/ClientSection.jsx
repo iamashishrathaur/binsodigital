@@ -46,7 +46,7 @@ const ClientsSection = () => {
     <div className="outer-box">
       <div className="sponsors-outer">
         <ul className="clients-carousel">
-        <AliceCarousel
+        <AliceCarousel 
               mouseTracking
               items={clients.map((client, index) => (
                 <div className="slide-item" key={index}>
@@ -62,6 +62,7 @@ const ClientsSection = () => {
               disableDotsControls={true}
               disableButtonsControls={true}
               ref={carouselRef}
+              touchTracking
             />
           
           <div className="owl-nav">
@@ -70,14 +71,6 @@ const ClientsSection = () => {
             </div>
             <div className="owl-next" onClick={handleNextClick}>
               <span className="fa fa-angle-right" />
-            </div>
-          </div>
-          <div className="owl-dots">
-            <div className="owl-dot active">
-              <span />
-            </div>
-            <div className="owl-dot">
-              <span />
             </div>
           </div>
         </ul>

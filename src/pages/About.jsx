@@ -6,13 +6,13 @@ import Footer from '../components/Footer'
 
 const About = () => {
   return (
-    <>
+    <div className='page-wrapper'>
    <Header/>
    <PageTittle name={'About Us'}/>
    
   
    <Footer/>
-   </>
+   </div>
   )
 }
 

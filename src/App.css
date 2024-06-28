@@ -429,10 +429,17 @@ ul,li {
   position: fixed;
   left: 0;
   top: 0;
+  margin: auto;
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #fff
+  background-color: #fff;
+  opacity: 0; 
+  transition: opacity 0.5s ease;
+  pointer-events: none; 
+}
+.preloader.active {
+  opacity: 1; /* Show preloader when active */
 }
 
 .preloader:after {
@@ -443,11 +450,11 @@ ul,li {
   margin-left: -55px;
   margin-top: -70px;
   height: 110px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-animation: pulse 1s infinite linear;
   animation: pulse 1s infinite linear;
-  background-image: url(../public/images/icons/preloader.png);
+  background-image: url(/images/icons/preloader.png);
   content: ""
 }
 
@@ -469,6 +476,21 @@ ul,li {
   content: "Loading";
   -webkit-transition: none;
   transition: none
+}
+
+@keyframes pulse{
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
 }
 
 .scroll-to-top {

@@ -5,12 +5,12 @@ import ServiceList from "../components/ServiceList"
 
 const Services = () => {
   return (
-    <>
+    <div className='page-wrapper'>
     <Header/>
     <PageTittle name={'Services'}/>
      <ServiceList/>
     <Footer/>
-    </>
+    </div>
   )
 }
 

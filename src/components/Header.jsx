@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Logo from '../assets/images/logo-2.webp'
 import Logo2 from '../assets/images/logo.png'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 const Header = () => {
   const [isHeaderActive, setIsHeaderActive] = useState(false);
   const [isMobileMenu, setIsMobileMenu] = useState(false)
@@ -121,12 +121,12 @@ const Header = () => {
                 </li>
                 <li className={`${location.pathname === '/pricing' ? 'current':''} dropdown`}><Link to={'/pricing'}>Pricing</Link>
                  <ul>
-                   <li><Link to={'/pricing'}>Static Website</Link></li>
-                   <li><Link to={'/pricing'}>Dynamic Website</Link></li>
-                   <li><Link to={'/pricing'}>E-Commerce Website</Link></li>
-                   <li><Link to={'/pricing'}>App Development</Link></li>
-                   <li><Link to={'/pricing'}>SEO Service</Link></li>
-                   <li><Link to={'/pricing'}>Hosting</Link></li>
+                 <li><NavLinkWithQuery to="/pricing" category="staticWebsite">Static Website</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="dynamicWebsite">Dynamic Website</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="eCommerceWebsite">E-Commerce Website</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="appDevelopment">App Development</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="seo">SEO Service</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="hosting">Hosting</NavLinkWithQuery></li>
                  </ul>
                 </li>
                 <li className={location.pathname === '/projects' ? 'current':''}><Link to={'/projects'}>Projects</Link></li>
@@ -245,12 +245,12 @@ const Header = () => {
               <li className={`${location.pathname === '/pricing' ? 'current':''} dropdown`}>
                 <Link to={'#'} onClick={handlePricingToggle}>Pricing</Link>
                 <ul className={`mobile-dropdown-list ${isPricingActive ? 'active' : ''}`}>
-                  <li><Link to="/pricing">Static Website</Link></li>
-                  <li><Link to="/pricing">Dynamic Website</Link></li>
-                  <li><Link to="/pricing">E-Commerce Website</Link></li>
-                  <li><Link to="/pricing">App Development</Link></li>
-                  <li><Link to="/pricing">SEO Service</Link></li>
-                  <li><Link to="/pricing">Hosting</Link></li>
+                <li><NavLinkWithQuery to="/pricing" category="staticWebsite">Static Website</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="dynamicWebsite">Dynamic Website</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="eCommerceWebsite">E-Commerce Website</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="appDevelopment">App Development</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="seo">SEO Service</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="hosting">Hosting</NavLinkWithQuery></li>
                 </ul>
                 <div className={`dropdown-btn ${isPricingActive ? 'active' : ''}`} onClick={handlePricingToggle}>
                   <i className="fa fa-angle-down"></i>
@@ -304,12 +304,12 @@ const Header = () => {
                 </li>
                 <li className={`${location.pathname === '/pricing' ? 'current':''} dropdown`}><Link to={'/pricing'}>Pricing</Link>
                  <ul>
-                   <li><Link to={'/pricing'}>Static Website</Link></li>
-                   <li><Link to={'/pricing'}>Dynamic Website</Link></li>
-                   <li><Link to={'/pricing'}>E-Commerce Website</Link></li>
-                   <li><Link to={'/pricing'}>App Development</Link></li>
-                   <li><Link to={'/pricing'}>SEO Service</Link></li>
-                   <li><Link to={'/pricing'}>Hosting</Link></li>
+                 <li><NavLinkWithQuery to="/pricing" category="staticWebsite">Static Website</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="dynamicWebsite">Dynamic Website</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="eCommerceWebsite">E-Commerce Website</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="appDevelopment">App Development</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="seo">SEO Service</NavLinkWithQuery></li>
+                <li><NavLinkWithQuery to="/pricing" category="hosting">Hosting</NavLinkWithQuery></li>
                  </ul>
                  
                 </li>
@@ -327,6 +327,14 @@ const Header = () => {
       </div>
     </header> 
   )
+}
+
+function NavLinkWithQuery({ to, category, children }) {
+  const location = useLocation();
+  const isActive = location.pathname === to && new URLSearchParams(location.search).get('category') === category;
+  return (
+    <Link to={{ pathname: to, search: `?category=${category}` }} className={isActive ? 'active' : ''}>{children}</Link>
+  );
 }
 
 export default Header

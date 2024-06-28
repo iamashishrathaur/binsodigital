@@ -7,13 +7,13 @@ import ContactDetails from '../components/ContactDetails'
 
 const Contact = () => {
   return (
-    <>
+    <div className='page-wrapper'>
      <Header/>
      <PageTittle name={'Contact Us'}/>
      <ContactDetails/>
       <ContactForm/>
      <Footer/>
-    </>
+    </div>
   )
 }
 

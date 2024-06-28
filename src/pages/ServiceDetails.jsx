@@ -10,7 +10,7 @@ import SidebarServiceList from "../components/SidebarServiceList"
 import FileBtn from "../components/FileBtn"
 const ServiceDetails = () => {
   return (
-   <>
+   <div className='page-wrapper'>
     <Header/>
     <PageTittle name={'Service Details'}/>
     <section className="services-details">
@@ -32,20 +32,19 @@ const ServiceDetails = () => {
           <img src={serviceDetails} alt="" />
           <h3 className="mt-4">Service Overview</h3>
           <p>
-            Lorem ipsum is simply free text used by copytyping refreshing. Neque
-            porro est qui dolorem ipsum quia quaed inventore veritatis et quasi
-            architecto beatae vitae dicta sunt explicabo. Aelltes port lacus
-            quis enim var sed efficitur turpis gilla sed sit amet finibus eros.
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the ndustry standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make{" "}
+          In today's digital age, having a dynamic and visually appealing website is crucial for businesses looking to attract and retain customers.
+           A well-designed website can make all the difference in creating a strong online presence and driving traffic to your site. At our website designing services,
+            we offer expertise in creating dynamic and user-friendly websites that are tailored to meet the specific needs of your business.
+             From responsive design to customized features, we are dedicated to providing excellent services that will help your website stand out in the competitive online landscape.
+              Read on to learn more about our dynamic website design services and how we can help elevate your online presence.
+              {" "}
           </p>
           <p>
-            When an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining essentially
-            unchanged Lorem ipsum dolor sit amet consec tetur adipis icing elit{" "}
+          The success of your online platform depends on selecting the top dynamic website design service provider.
+           Look for a provider with a history of producing creative and visually appealing websites. Ensure they offer a comprehensive range of services that align with your business goals and target audience.
+            Evaluate their portfolio, client testimonials, and customer support options to evaluate their reliability and expertise. To keep your website competitive and user-friendly,
+             give preference to providers who keep up with industry standards and the newest technological advancements. For the long term benefit of your online presence, make an informed decision by doing extensive research and comparing various service providers.
+          {" "}
           </p>
           <div className="content mt-40">
             <div className="text">
@@ -98,7 +97,7 @@ const ServiceDetails = () => {
 </section>
 
     <Footer/>
-   </>
+   </div>
   )
 }
 

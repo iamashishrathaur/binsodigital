@@ -194,3 +194,24 @@ ul{
         bottom: 6px;
     }
   }
+
+/* Project */
+
+.project-block-three .image-box {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-body .bg-light{
+    border-radius: 0 0 10px 10px;
+  }
+
+  .pricing-sub-title{
+    color: var(--theme-color1);
+  }
+
+  .slide-item{
+    cursor: grab;
+  }
+  .slide-item:hover {
+    cursor: grabbing;
+  }
