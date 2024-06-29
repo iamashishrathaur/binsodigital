@@ -22,7 +22,7 @@ const FeaturesSection2 = () => {
             <div className="content-box">
               <h5 className="title">Award winning agency</h5>
               <div className="text">
-                Lorem ipsum is simply free dolo sit amet, ctetur.
+              Excellence and innovation in delivering top-notch services and solutions.
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@ const FeaturesSection2 = () => {
             <div className="content-box">
               <h5 className="title">Best quality work</h5>
               <div className="text">
-                Lorem ipsum is simply free dolo sit amet, ctetur.
+              Exceptional work with ensuring client satisfaction and outstanding results.
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ const FeaturesSection2 = () => {
             <div className="content-box">
               <h5 className="title">Satisfaction guarantee</h5>
               <div className="text">
-                Lorem ipsum is simply free dolo sit amet, ctetur.
+              Customer satisfaction with a guarantee of high-quality service.
               </div>
             </div>
           </div>

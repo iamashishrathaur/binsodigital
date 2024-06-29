@@ -215,3 +215,33 @@ ul{
   .slide-item:hover {
     cursor: grabbing;
   }
+
+
+  /* Project Section3 */
+
+  .project-section-three .carousel-outer {
+    margin: 0;
+}
+
+.project-three-carousel .owl-dots{
+  margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.project-three-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  background: #ff670950;
+  border-radius: 15px;
+  transition: .5s;
+}
+
+.project-three-carousel .owl-dot.active {
+  width: 30px;
+  background: var(--theme-color1);
+}

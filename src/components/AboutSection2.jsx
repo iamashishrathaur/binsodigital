@@ -16,9 +16,7 @@ const AboutSection2 = () => {
             <span className="sub-title">ABOUT COMPANY</span>
             <h2>Expert of Software Programming</h2>
             <div className="text">
-              Lorem ipsum dolor sit amet, consectetur notted adipisicing elit
-              sed do eiusmod tempor incididunt ut labore et simply free text
-              dolore magna aliqua lonm andhn personal touch
+            An expert in software programming demonstrates mastery across multiple programming languages and frameworks, adept at designing, developing, and optimizing complex applications. Their expertise spans frontend and backend development, including databases, APIs, and user interfaces, with a focus on delivering efficient and maintainable code.
             </div>
           </div>
           <div className="row">
@@ -30,8 +28,7 @@ const AboutSection2 = () => {
                 <CgIfDesign className='icon'/>
                 <h6 className="title">Quality web designing</h6>
                 <div className="text">
-                  It is a long established fact that a reader will be distracted
-                  the readable contentk layout.
+                 Expert in crafting high-quality web designs that combine aesthetics with usability, ensuring an engaging user experience.
                 </div>
               </div>
             </div>
@@ -41,8 +38,7 @@ const AboutSection2 = () => {
                 <i className="icon flaticon-search-engine" />
                 <h6 className="title">SEO &amp; content Writing</h6>
                  <div className="text">
-                  It is a long established fact that a reader will be distracted
-                  the readable contentk layout.
+                 SEO ensures that web content is optimized with relevant keywords, meta tags, and backlinks to improve search engine rankings
                 </div>
               </div>
             </div>

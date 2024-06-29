@@ -129,7 +129,16 @@ const Header = () => {
                 <li><NavLinkWithQuery to="/pricing" category="hosting">Hosting</NavLinkWithQuery></li>
                  </ul>
                 </li>
-                <li className={location.pathname === '/projects' ? 'current':''}><Link to={'/projects'}>Projects</Link></li>
+                <li className={`${location.pathname === '/projects' ? 'current':''} dropdown`}><Link to={'/projects'}>Projects</Link>
+                  <ul>
+                    <li>
+                       <Link to={'/projects'}>Projects</Link>
+                    </li>
+                    <li>
+                      <Link to={'/project-details'}>Project Details</Link>
+                    </li>
+                  </ul>
+                </li>
                 <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
               </ul>
             </nav>
@@ -150,77 +159,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {/* <div className="mobile-menu">
-        <div className="menu-backdrop" />
-        <nav className="menu-box">
-          <div className="upper-box">
-            <div className="nav-logo">
-              <a href="index.html">
-                <img src="images/logo-2.png" alt="" title="" />
-              </a>
-            </div>
-            <div className="close-btn">
-              <i className="icon fa fa-times" />
-            </div>
-          </div>
-          <ul className="navigation clearfix"></ul>
-          <ul className="contact-list-one">
-            <li>
-              <div className="contact-info-box">
-                {" "}
-                <i className="icon lnr-icon-phone-handset" />{" "}
-                <span className="title">Call Now</span>{" "}
-                <a href="tel:+92880098670">+92 (8800) - 98670</a>{" "}
-              </div>
-            </li>
-            <li>
-              <div className="contact-info-box">
-                {" "}
-                <span className="icon lnr-icon-envelope1" />{" "}
-                <span className="title">Send Email</span>{" "}
-                <a href="/cdn-cgi/l/email-protection#97fff2fbe7d7f4f8fae7f6f9eeb9f4f8fa">
-                  <span
-                    className="__cf_email__"
-                    data-cfemail="95fdf0f9e5d5f6faf8e5f4fbecbbf6faf8"
-                  >
-                    [email&nbsp;protected]
-                  </span>
-                </a>{" "}
-              </div>
-            </li>
-            <li>
-              <div className="contact-info-box">
-                {" "}
-                <span className="icon lnr-icon-clock" />{" "}
-                <span className="title">Send Email</span> Mon - Sat 8:00 - 6:30,
-                Sunday - CLOSED{" "}
-              </div>
-            </li>
-          </ul>
-          <ul className="social-links">
-            <li>
-              <a href="#">
-                <i className="fab fa-twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-facebook-f" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-pinterest" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-instagram" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div> */}
+    
       <div className="mobile-menu">
        <div className="menu-backdrop" onClick={()=>setIsMobileMenu(false)}></div>
 
@@ -256,7 +195,16 @@ const Header = () => {
                   <i className="fa fa-angle-down"></i>
                 </div>
               </li>
-                <li className={location.pathname === '/projects' ? 'current':''}><Link to={'/projects'}>Projects</Link></li>
+              <li className={`${location.pathname === '/projects' ? 'current':''} dropdown`}><Link to={'/projects'}>Projects</Link>
+                  <ul>
+                    <li>
+                       <Link to={'/projects'}>Projects</Link>
+                    </li>
+                    <li>
+                      <Link to={'/project-details'}>Project Details</Link>
+                    </li>
+                  </ul>
+                </li>
                 <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
             </ul>
             <ul className="contact-list-one">
@@ -313,7 +261,16 @@ const Header = () => {
                  </ul>
                  
                 </li>
-                <li className={location.pathname === '/projects' ? 'current':''}><Link to={'/projects'}>Projects</Link></li>
+                <li className={`${location.pathname === '/projects' ? 'current':''} dropdown`}><Link to={'/projects'}>Projects</Link>
+                  <ul>
+                    <li>
+                       <Link to={'/projects'}>Projects</Link>
+                    </li>
+                    <li>
+                      <Link to={'/project-details'}>Project Details</Link>
+                    </li>
+                  </ul>
+                </li>
                 <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
                 </ul>
                 </div>

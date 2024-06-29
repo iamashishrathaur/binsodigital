@@ -9,6 +9,7 @@ import ServiceDetails from './pages/ServiceDetails'
 import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 import About from './pages/About'
+import ProjectDetails from './pages/ProjectDetails'
 
 function App() {
 
@@ -36,6 +37,11 @@ function App() {
     {
       path:'/projects',
       element:<Projects/>
+    }
+    ,
+    {
+      path:'/project-details',
+      element:<ProjectDetails/>
     },
     {
       path:'/about',

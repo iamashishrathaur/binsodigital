@@ -20,13 +20,15 @@ import { useEffect, useState } from 'react';
 const Home1 = () => {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-        setLoading(false);
-    }, 2000);
+const timeout = setTimeout(() => {
+  setLoading(false);
+}, 1000);
+const handleLoad = () => {
+  clearTimeout(timeout); 
+  setLoading(false);
+};
+window.addEventListener('load', handleLoad);
 
-    return () => clearTimeout(timeout);
-}, []);
 
   return (
     <>

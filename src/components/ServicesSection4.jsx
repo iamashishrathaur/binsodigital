@@ -24,10 +24,10 @@ const ServicesSection4 = () => {
               <div className="content">
                 <i className="icon flaticon-programmer" />
                 <h6 className="title">
-                  <a href="page-service-details.html">IT Management</a>
+                  <a href="page-service-details.html">Software Development</a>
                 </h6>
                 <div className="text">
-                  Lorem Ipsum. Proin nibh vel velit auctor
+                Creating visually appealing and functional websites for optimal user experience.
                 </div>
               </div>
             </div>
@@ -37,10 +37,10 @@ const ServicesSection4 = () => {
               <div className="content">
                 <i className="icon flaticon-front-end" />
                 <h6 className="title">
-                  <a href="page-service-details.html">Cyber Security</a>
+                  <a href="page-service-details.html">Social Media</a>
                 </h6>
                 <div className="text">
-                  Lorem Ipsum. Proin nibh vel velit auctor
+                Effective strategies for engaging, growing, and managing social media.
                 </div>
               </div>
             </div>
@@ -50,17 +50,17 @@ const ServicesSection4 = () => {
               <div className="content">
                 <i className="icon flaticon-concept" />
                 <h6 className="title">
-                  <a href="page-service-details.html">Software Development</a>
+                  <a href="page-service-details.html">Hosting</a>
                 </h6>
                 <div className="text">
-                  Lorem Ipsum. Proin nibh vel velit auctor
+                Reliable and scalable hosting solutions for businesses and personal websites.
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="bottom-box">
-          Digima provides best Web Design SErvices for your business.{" "}
+          Digima provides best Web Design Services for your business.{" "}
           <a href="page-services.html">Find Your Solution</a>
         </div>
       </div>

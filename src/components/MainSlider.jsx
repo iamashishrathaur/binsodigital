@@ -36,7 +36,7 @@ const MainSlider = () => {
                 animationName: "fadeInUp"
               }}
             >
-              Best Digital Agency
+              Welcome Digital Agency
             </span>
             <h1
               className="title wow fadeInUp animated"
