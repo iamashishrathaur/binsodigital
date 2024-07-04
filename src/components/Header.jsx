@@ -7,6 +7,7 @@ const Header = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(false)
   const [isServicesActive, setIsServicesActive] = useState(false);
   const [isPricingActive, setIsPricingActive] = useState(false);
+  const [isProjectActive, setIsProjectActive] = useState(false);
 
   const handleServicesToggle = () => {
     setIsServicesActive(!isServicesActive);
@@ -14,6 +15,10 @@ const Header = () => {
 
   const handlePricingToggle = () => {
     setIsPricingActive(!isPricingActive);
+  };
+
+  const handleProjectToggle = () => {
+    setIsProjectActive(!isProjectActive);
   };
   useEffect(() => {
     const handleScroll = () => {
@@ -33,6 +38,7 @@ const Header = () => {
     isMobileMenu ? document.body.classList.toggle("mobile-menu-visible"): document.body.classList.remove("mobile-menu-visible")
   },[isMobileMenu])
   return (
+   <>
     <header className={`main-header header-style-two`}>
       <div className="header-top">
         <div className="inner-container">
@@ -196,7 +202,7 @@ const Header = () => {
                 </div>
               </li>
               <li className={`${location.pathname === '/projects' ? 'current':''} dropdown`}><Link to={'/projects'}>Projects</Link>
-                  <ul>
+                  <ul className={`mobile-dropdown-list ${isProjectActive ? 'active' : ''}`}>
                     <li>
                        <Link to={'/projects'}>Projects</Link>
                     </li>
@@ -204,6 +210,9 @@ const Header = () => {
                       <Link to={'/project-details'}>Project Details</Link>
                     </li>
                   </ul>
+                  <div className={`dropdown-btn ${isProjectActive ? 'active' : ''}`} onClick={handleProjectToggle}>
+                  <i className="fa fa-angle-down"></i>
+                </div>
                 </li>
                 <li className={location.pathname === '/contact' ? 'current':''}><Link to={'/contact'}>Contact</Link></li>
             </ul>
@@ -229,7 +238,7 @@ const Header = () => {
         </ul>
        </nav>
      </div>
-      <div className={`sticky-header sticky-header-style-two ${isHeaderActive ? 'fixed-header animated slideInDown':''}`}>
+      <div className={ `sticky-header sticky-header-style-two ${isHeaderActive ? 'fixed-header animated slideInDown':''}`}>
         <div className="auto-container">
           <div className="inner-container">
             <div className="logo">
@@ -283,6 +292,7 @@ const Header = () => {
         </div>
       </div>
     </header> 
+   </>
   )
 }
 
@@ -290,8 +300,8 @@ function NavLinkWithQuery({ to, category, children }) {
   const location = useLocation();
   const isActive = location.pathname === to && new URLSearchParams(location.search).get('category') === category;
   return (
-    <Link to={{ pathname: to, search: `?category=${category}` }} className={isActive ? 'active' : ''}>{children}</Link>
+    <Link to={`{ pathname: to, search: ?category=${category} }`} className={isActive ? 'active' : ''}>{children}</Link>
   );
 }
 
-export default Header
+export default Header;

@@ -1,86 +1,79 @@
 import React, { useState } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import Thumb4 from '../assets/images/thumb3-4.jpg'
-import Thumb3 from '../assets/images/thumb3-3.jpg'
-import Thumb2 from '../assets/images/thumb3-2.jpg'
-import Thumb1 from '../assets/images/thumb3-1.jpg'
+import Thumb4 from '../assets/images/thumb3-4.jpg';
+import Thumb3 from '../assets/images/thumb3-3.jpg';
+import Thumb2 from '../assets/images/thumb3-2.jpg';
+import Thumb1 from '../assets/images/thumb3-1.jpg';
 
 const items = [
-  <div key={'item1'} className="testimonial-block-three">
-    <div className="inner-box">
-      <div className="image-box">
-        <div className="text">
-          We believe in four pillars of influence that drive our growth. This is ingrained in everything we do. We use technology.
-        </div>
-        <div className="info-box">
-          <h6 className="name">Jessica Brown</h6>
-          <span className="designation">CEO &amp; Founder</span>
-          <span className="icon icon-quote" />
-        </div>
-        <div className="rating">
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div key={'item2'} className="testimonial-block-three">
-    <div className="inner-box">
-      <div className="image-box">
-        <div className="text">
-          We believe in four pillars of influence that drive our growth. This is ingrained in everything we do. We use technology.
-        </div>
-        <div className="info-box">
-          <h6 className="name">Kevin Martin</h6>
-          <span className="designation">Designer</span>
-          <span className="icon icon-quote" />
-        </div>
-        <div className="rating">
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div key={'item3'} className="testimonial-block-three">
-    <div className="inner-box">
-      <div className="image-box">
-        <div className="text">
-          We believe in four pillars of influence that drive our growth. This is ingrained in everything we do. We use technology.
-        </div>
-        <div className="info-box">
-          <h6 className="name">Jessica Brown</h6>
-          <span className="designation">CEO &amp; Founder</span>
-          <span className="icon icon-quote" />
-        </div>
-        <div className="rating">
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-          <i className="fa fa-star" />
-        </div>
-      </div>
-    </div>
-  </div>,
+  {
+    id: 1,
+    text: "We believe in four pillars of influence that drive our growth. This is ingrained in everything we do. We use technology.",
+    name: "Jessica Brown",
+    designation: "CEO & Founder",
+    rating: 5,
+  },
+  {
+    id: 2,
+    text: "We believe in four pillars of influence that drive our growth. This is ingrained in everything we do. We use technology.",
+    name: "Kevin Martin",
+    designation: "Designer",
+    rating: 5,
+  },
+  {
+    id: 3,
+    text: "We believe in four pillars of influence that drive our growth. This is ingrained in everything we do. We use technology.",
+    name: "Jessica Brown",
+    designation: "CEO & Founder",
+    rating: 5,
+  },
+  {
+    id: 4,
+    text: "We believe in four pillars of influence that drive our growth. This is ingrained in everything we do. We use technology.",
+    name: "Jessica Brown",
+    designation: "CEO & Founder",
+    rating: 5,
+  },
 ];
 
+const renderItems = () => {
+  return items.map((item) => (
+    <div key={item.id} className="testimonial-block-three">
+      <div className="inner-box">
+        <div className="image-box">
+          <div className="text">{item.text}</div>
+          <div className="info-box">
+            <h6 className="name">{item.name}</h6>
+            <span className="designation">{item.designation}</span>
+            <span className="icon icon-quote" />
+          </div>
+          <div className="rating">
+            {[...Array(item.rating)].map((_, index) => (
+              <i key={index} className="fa fa-star" />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  ));
+};
+
+
+
+
 const TestimonialSection = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
 
-  const slideTo = (i) => {
-    setActiveIndex(i);
-  };
 
-  const handleSlideChanged = (e) => {
-    setActiveIndex(e.item);
+  const renderDots = ({ isActive }) => {
+    return (
+      <div className="owl-dots">
+  <div className={`owl-dot ${isActive ? 'active' : ''}`}>
+        <span></span>
+      </div>
+      </div>
+      
+    );
   };
 
   return (
@@ -117,27 +110,15 @@ const TestimonialSection = () => {
               </div>
               <div className="carousel-outer">
                 <div className="testimonial-carousel-three default-dots">
-                  <AliceCarousel 
-                    items={items}
-                    disableButtonsControls
-                    disableDotsControls
-                    autoPlay
-                    infinite
-                    autoPlayInterval={6000}
-                    activeIndex={activeIndex}
-                    onSlideChanged={handleSlideChanged}
+                  <AliceCarousel
+                   mouseTracking
+                   items={renderItems()}
+                   infinite
+                  //  responsive={responsive}
+                   disableButtonsControls
+                   controlsStrategy="alternate"
+                   renderDotsItem={renderDots}
                   />
-                  <div className="owl-dots">
-                    {items.map((item, index) => (
-                      <div 
-                        key={index} 
-                        className={`owl-dot ${activeIndex === index ? 'active' : ''}`} 
-                        onClick={() => slideTo(index)}
-                      >
-                        <span></span>
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </div>
             </div>

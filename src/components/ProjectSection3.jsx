@@ -1,99 +1,88 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-import Project from '../assets/images/project-6.jpg'
+import ProjectImage from '../assets/images/project-6.jpg'; // Update this import according to your project structure
+import { useState } from 'react';
 
 const items = [
-  <div className="project-block-three p-3" key={1}>
-    <div className="inner-box">
-      <div className="image-box">
-        <figure className="image">
-          <a href="images/resource/project-5.jpg" className="lightbox-image">
-            <img src={Project} alt="" />
-          </a>
-        </figure>
-        <div className="overlay-box">
-          <a href="page-project-details.html" className="icon">
-            <i className="fa fa-long-arrow-alt-right" />
-          </a>
-          <h4 className="title">
-            <a href="page-project-details.html">Web designing</a>
-          </h4>
-          <span className="cat">DESIGN / IDEAS</span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div className="project-block-three p-3" key={2}>
-    <div className="inner-box">
-      <div className="image-box">
-        <figure className="image">
-          <a href="images/resource/project-6.jpg" className="lightbox-image">
-            <img src={Project} alt="" />
-          </a>
-        </figure>
-        <div className="overlay-box">
-          <a href="page-project-details.html" className="icon">
-            <i className="fa fa-long-arrow-alt-right" />
-          </a>
-          <h4 className="title">
-            <a href="page-project-details.html">Web development</a>
-          </h4>
-          <span className="cat">DESIGN / IDEAS</span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div className="project-block-three p-3" key={3}>
-    <div className="inner-box">
-      <div className="image-box">
-        <figure className="image">
-          <a href="images/resource/project-7.jpg" className="lightbox-image">
-            <img src={Project} alt="" />
-          </a>
-        </figure>
-        <div className="overlay-box">
-          <a href="page-project-details.html" className="icon">
-            <i className="fa fa-long-arrow-alt-right" />
-          </a>
-          <h4 className="title">
-            <a href="page-project-details.html">Web application</a>
-          </h4>
-          <span className="cat">DESIGN / IDEAS</span>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div className="project-block-three p-3" key={4}>
-    <div className="inner-box">
-      <div className="image-box">
-        <figure className="image">
-          <a href={Project} className="lightbox-image">
-            <img src={Project} alt="" />
-          </a>
-        </figure>
-        <div className="overlay-box">
-          <a href="page-project-details.html" className="icon">
-            <i className="fa fa-long-arrow-alt-right" />
-          </a>
-          <h4 className="title">
-            <a href="page-project-details.html">Web marketing</a>
-          </h4>
-          <span className="cat">DESIGN / IDEAS</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  {
+    id: 1,
+    image: ProjectImage,
+    alt: 'Project 5',
+    href: 'images/resource/project-5.jpg',
+    title: 'Web designing',
+  },
+  {
+    id: 2,
+    image: ProjectImage,
+    alt: 'Project 6',
+    href: 'images/resource/project-6.jpg',
+    title: 'Web development',
+  },
+  {
+    id: 3,
+    image: ProjectImage,
+    alt: 'Project 7',
+    href: 'images/resource/project-7.jpg',
+    title: 'Web application',
+  },
+  {
+    id: 4,
+    image: ProjectImage,
+    alt: 'Project 8',
+    href: 'images/resource/project-8.jpg',
+    title: 'Web marketing',
+  },
 ];
 
+const renderItems = () => {
+  return items.map((item) => (
+    <div className="project-block-three p-3" key={item.id}>
+      <div className="inner-box">
+        <div className="image-box">
+          <figure className="image">
+            <a href={item.href} className="lightbox-image">
+              <img src={item.image} alt={item.alt} />
+            </a>
+          </figure>
+          <div className="overlay-box">
+            <a href="page-project-details.html" className="icon">
+              <i className="fa fa-long-arrow-alt-right" />
+            </a>
+            <h4 className="title">
+              <a href="page-project-details.html">{item.title}</a>
+            </h4>
+            <span className="cat">DESIGN / IDEAS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  ));
+};
+
+const renderDots = ({ isActive }) => {
+  return (
+    <div className={`owl-dot ${isActive ? 'active' : ''}`}>
+      <span></span>
+    </div>
+  );
+};
+
 const ProjectSection3 = () => {
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+  };
+
+
   return (
     <section className="project-section-three style-two pt-0">
       <div className="auto-container">
         <div className="sec-title">
           <div className="row align-items-center">
             <div className="col-lg-7">
-              <span className="sub-title">recently Completed work</span>
+              <span className="sub-title">Recently Completed Work</span>
               <h2>
                 Improve &amp; Enhance the <br />
                 Tech Projects
@@ -112,19 +101,13 @@ const ProjectSection3 = () => {
         <div className="project-three-carousel carousel-outer overflow-hidden">
           <AliceCarousel
             mouseTracking
-            items={items}
+            items={renderItems()}
             infinite
-            responsive={{
-              0: { items: 1 },
-              568: { items: 2 },
-              1024: { items: 3 },
-            }}
+            responsive={responsive}
             disableButtonsControls
-            disableDotsControls
             controlsStrategy="alternate"
+            renderDotsItem={renderDots}
           />
-
-       <div className="owl-dots"><div className="owl-dot active"><span></span></div><div className="owl-dot"><span></span></div><div className="owl-dot"><span></span></div><div className="owl-dot"><span></span></div></div>
         </div>
       </div>
     </section>

@@ -245,3 +245,9 @@ ul{
   width: 30px;
   background: var(--theme-color1);
 }
+
+/* testimonial-section */
+
+.testimonial-section-three .owl-dots{
+  padding: 0;
+}
